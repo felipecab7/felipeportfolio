@@ -184,7 +184,7 @@ main {
   margin-right: auto;
   margin-left: 6rem;
   position: relative;
-  top: 1000px;
+  top: -1000px;
   
  
 }
@@ -197,6 +197,10 @@ main {
   padding: 5px;
 }
 
+
+a {
+  text-decoration: none;
+}
 
 #skip,
 #skip:hover,
@@ -229,43 +233,66 @@ main {
 /*------------------------ HEADINGS AND PARAGRAPHS ------------------------*/
 
 h1 {
-  font-family: "alpina";
+  font-family: "silkamedium";
   font-size: 63px;
   color: black;
 }
 
 h2 {
-  font-family: "alpina";
-  font-size: 45px;
+  font-family: "silkamedium";
+  font-size: 35px;
   color: black;
+  text-align: center;
 }
 
 h3 {
+  font-family: "silkamedium";
+  font-size: 30px;
+  color: black;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
   font-family: "silkamedium";
   font-size: 20px;
   color: black;
   line-height: 1.6rem;
 }
 
-h4 {
-  font-family: "silkamedium";
-  font-size: 18px;
-  color: black;
-  line-height: 1.6rem;
-}
-
 h5 {
   font-family: "silkalight";
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
   line-height: 35px;
 }
 
 p {
   font-family: "silka";
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 200;
+  font-size: 16px;
   line-height: 1.8rem;
+  color: rgb(97, 97, 97);
+  margin: 0px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.indented {
+  
+  padding:10px;
+
+}
+
+.note {
+  background-color: #f7f7f7;
+  padding: 20px;
+  padding-left:30px;
+  padding-right:30px;
+  border-radius: 25px;
+  margin-top:20px;
 }
 
 /*------------------------ BUTTONS and ICONS ------------------------*/
@@ -518,7 +545,7 @@ p {
   width: 100%;
   background-color: white;
 
-  padding: 4.6rem 4.6rem 4.6rem 4.6rem;
+  padding: 1rem 4.6rem 1rem 4.6rem;
   height: 100%;
 }
 
@@ -582,7 +609,7 @@ i {
 
 .main_container_content_image img {
  
-  opacity: 0.8;
+
   border-radius: 4px;
 }
 
@@ -620,6 +647,7 @@ i {
   font-size: 18px;
   background: none;
   margin: 10px;
+  margin-bottom:0px;
   font-family: "silkamedium";
 
   color: black;
@@ -629,6 +657,8 @@ i {
 .main_container_content p {
   background: none;
   margin: 10px;
+  
+  margin-top:0px;
 }
 
 /* skill container and buttons */
@@ -957,6 +987,47 @@ i {
   line-height: none;
 }
 
+
+/* cases page */
+
+.section-1 {
+  padding: 50px;
+}
+
+.section-2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-item {
+  margin-top: 14px;
+ 
+
+
+  
+
+}
+
+.section-item-image {
+  width: 100%;
+
+
+}
+
+.section-item-image img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+
+
+
+  
+}
+
+
+
+
+
 /*------------------------ CONTACT PAGE ------------------------*/
 
 form {
@@ -1047,6 +1118,31 @@ form {
 
 @media screen and (min-width: 768px) {
 
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 90px;
+    
+  
+    
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 50px;
+  
+  
+    
+  }
+
+  .section-2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .nav-list {
     background: white;
     margin: 0;
@@ -1093,7 +1189,7 @@ form {
     background-color: white;
     margin-top: 1rem;
 
-    padding: 4.6rem 4.6rem 4.6rem 4.6rem;
+    padding: 1rem 4.6rem 1rem 4.6rem;
     height: 100%;
   }
 
@@ -1232,6 +1328,22 @@ form {
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 1024px) {
+
+  .section-2 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 70px;
+  
+  
+    
+  }
+
   .nav-list {
     background: white;
     margin: 0;
@@ -1291,9 +1403,9 @@ form {
     margin: 0 auto;
     width: 100%;
     background-color: white;
-    margin-top: 8rem;
+    margin-top: 2rem;
   
-    padding: 4.6rem 4.6rem 4.6rem 4.6rem;
+     padding: 1rem 4.6rem 1rem 4.6rem;
     height: 100%;
   }
 
@@ -1328,11 +1440,32 @@ form {
 
   .main_container {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 4.6rem;
+    padding-right: 4.6rem;
   }
 
 @media screen and (min-width: 1440px) {
+
+  .section-2 {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 90px;
+  
+  
+    
+  }
+
+  .section-2 {
+    padding-left: 340px;
+    padding-right: 340px;
+  }
+
 
   
   .main_message {
@@ -1342,9 +1475,9 @@ form {
     margin: 0 auto;
     width: 100%;
     background-color: white;
-    margin-top: 8rem;
+    margin-top: 2rem;
   
-    padding: 4.6rem 4.6rem 4.6rem 4.6rem;
+    padding: 1rem 4.6rem 1rem 4.6rem;
     height: 100%;
   }
 
@@ -1396,7 +1529,7 @@ form {
   }
 
   .description_container {
-    padding-left: 18rem;
+   
   }
   .description_container_item {
     display: block;
@@ -1468,4 +1601,39 @@ form {
   .pimg1 {
     background-attachment: scroll;
   }
+}
+
+
+
+@media screen and (min-width: 2200px) {
+
+
+  .section-2 {
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+
+
+  
+  .main_message {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+  
+    padding: 1rem 20rem 1rem 20rem;
+    height: 100%;
+  }
+
+  .main_container {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 35rem;
+    padding-right: 35rem;
+  }
+
+
+
 }

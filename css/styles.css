@@ -330,7 +330,6 @@ p {
 
 b { color: #000000;
  
-
 }
 
 .page figure {
@@ -348,7 +347,7 @@ b { color: #000000;
   font-size: 14px;
   font-weight: 200;
   font-family: "silkalight";
-
+  color: rgb(53, 53, 53);
 
 }
 

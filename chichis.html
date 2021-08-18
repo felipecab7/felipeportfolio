@@ -2,68 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/html5reset.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYQXBD3HR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2ZYQXBD3HR');
-    </script>
 
     <title>Home</title>
 </head>
 
 <body>
+    <div class="container-principal">
+        <!-- Navegation -->
 
-    <!-- Navegation -->
+        <header class="header">
+            <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
+            <div class="logo">
+                <a href="index.html">FELIPE CABRERA</a>
+            </div>
 
-    <header>
-
-        <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
-
-        <navbar>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html" id="logo">FELIPE CABRERA</a>
-                </li>
+            <ul class="nav-list text-right">
                 <li class="nav-item">
                     <a href="index.html">Home</a>
                 </li>
-               
+
                 <li class="nav-item">
-                    <a href="contact.html">Contact</butt>
+                    <a href="About.html">My story</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="#"></a>
+                    <a href="mailto:dcabrera@umich.edu">Contact</a>
                 </li>
+
                 <li class="nav-item">
                     <a href="#"></a>
                 </li>
             </ul>
 
-
-
             <!-- <div class="navbar_toggle" id="mobile_menu">
                 <span class="bar"></span><span class="bar"></span>
                 <span class="bar"></span>
             </div> -->
-
-
-
-
-
-
 
             <!-- <div class = "sidenav">
             <ul class="navbar_menu">
@@ -90,127 +72,359 @@
 
             </ul>
         </div>   -->
+        </header>
 
+        <div class="invisible"></div>
 
+        <!-- hero section landing page-->
 
-    </header>
-
-    <!-- hero section landing page-->
-
-    <main id="main-content">
-        <section>
-            <div class="hero-wrap">
-                <h2 class="hero-description">Chichi's</h2>
-            </div>
-        </section>
-
-        <section class="page">
-            <div class="wrap">
-                <div class="text-holder">
-        
-                    <p>The goal of this project was to develop a food delivery application for Chichi’s --a Latin American restaurant based in Ann Arbor, Michigan-- in a cross-functional way. All areas of the UX pipeline were covered --user research, back-end programming and front-end programming.<br></p>
-
-
-                    <h3>Researching the job</h3>
-
-                    <p>When I was first approached by Chichi’s founder, I was asked to make an application similar to Doordash or UberEats. Chichi’s was in need of an online platform where they could handle their delivery process. The reason for this change was the increasing demand and popularity of Chichi’s on campus. Customers loved the product, but they were not very happy with the delivery process as most of the interactions were happening through multiple applications. <br></p>
-
-                    <p>As a firm believer in the Jobs To Be Done methodology and rapid iteration, I proposed that we first interviewed customers to discover what was causing them to order Chichi’s products. </p>
-
-
-                    <h4>Research questions</h4>
-
-                    <ul>
-                        <li>
-                            <p>What do Chichi’s customers hire its products for?</p>
-
-                        </li>
-
-                        <li>
-
-                            <p>What are the related social, emotional and functional jobs?</p>
-
-
-                        </li>
-                        <li>
-                            <p>What are their desired outcome statements?</p>
-
-                        </li>
-                        <li>
-                            <p> How do they measure success?</p>
-
-                        </li>
-                      
-                    </ul>
-
-                    <p>After conducting 20 interviews and analyzing the data I uncovered two main functional jobs and 10 desired outcome statements (how customers measure success). </p>
-
-                    <figure>
-                        <img src="css/imgs/interview-data.png" alt="image">
-
-
-                    </figure>
-
-                    <i>Social, emotional, and functional needs discovered</i>
-
-                    <h3></h3>
-
-                    <figure>
-                        <img src="css/imgs/job-flow.png" alt="image">
-
-
-                    </figure>
-
-                    <i>Main Job/Need breakdown</i>
-
-                    <h3></h3>
-
-                    <figure>
-                        <img src="css/imgs/outcome.png" alt="image">
-
-
-                    </figure>
-
-                    <i>Left: Gains, Pains and Jobs - Right: Desired outcome statements and requirements</i>
-
-                    <h3></h3>
-                    
-
-
-
-
-
+        <main id="main-content">
+            <section>
+                <div class="hero-wrap">
+                    <h2 class="hero-description">Chichi's</h2>
                 </div>
+            </section>
 
-            </div>
+            <section class="page">
+                <div class="wrap">
+                    <div class="text-holder">
+                        <h3>The problem</h3>
 
+                        <p>
+                            With the promise of delivering fresh authentic latin american
+                            food to University of Michigan students, Chichi’s quickly gained
+                            popularity on campus. It only offered a convenient way to get
+                            food delivered to students at night, but it also exposed
+                            students to rich latin-american cuisine originating from
+                            countries such as venezuela, cuba, and argentina. This prompted
+                            its founders to look for ways to improve its delivery process,
+                            which was becoming a frustration to many customers as most of
+                            the interactions were happening through multiple applications
+                            (Snapchat, Text, and Venmo).
+                        </p>
 
-        </section>
+                        <p>
+                            I was asked to develop a full-stack application that could solve
+                            this problem. This involved:
+                        </p>
 
+                        <ol>
+                            <li>
+                                <p>
+                                    <b>Understanding the why: <u>Conducting user research</u></b>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Identifying users' mental models and uncovering main
+                                            functional, emotional, and social needs.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
 
+                            <li>
+                                <p>
+                                    <b>Designing and Ideating: <u>Solution testing </u></b>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Creating low-mid-high fidelity prototypes based on
+                                            research hypotheses using Adobe XD.
+                                        </p>
+                                    </li>
 
-    </main>
+                                    <li>
+                                        <p>Iterating and testing prototypes.</p>
+                                    </li>
 
+                                    <li>
+                                        <p>Communicating findings with stakeholders.</p>
+                                    </li>
+                                </ul>
+                            </li>
 
-    <footer>
-        <div class = "footer_container">
-            <div class ="footer_container_items">
-                
-                <div class = "footer_info">
-                    <p>Made by Felipe Cabrera © 2021</p>
-                    <p>Graduate of UX Design from the University of Michigan School of Information.</p>
-        
-                    <p>dcabrera@umich.edu</p>
-    
+                            <li>
+                                <p>
+                                    <b>Backend development: <u>Server-side </u></b>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>Modeling class-based models with Python.</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Building an API using Django Rest Framework.</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Building relational databases using PostgreSQL.</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Testing API calls using Postman.</p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <b>Frontend development: <u>Coding interfaces</u></b>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Creating functional components and hooks with
+                                            Javascript, HTML, and React.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>Implementing react-bootstrap library.</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Creating custom CSS styling.</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Implementing redux for State Management.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <figure id="main-chichis">
+                            <img id="myimage" src="css/imgs/main-stories.png" alt="image" />
+                        </figure>
+
+                        <br />
+                        <br />
+
+                        <br />
+
+                        <h3>Understanding the why</h3>
+
+                        <p>
+                            The first step was to assess the current experience of Chichi’s
+                            ordering process from a user-centered perspective and identify
+                            the causality of their behavior. I kicked off the research
+                            process with the following goals.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <p>
+                                    Identify what causes Chichi’s customers to pick up their
+                                    phone and order Chichi’s.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Identify functional, emotional and social needs related to
+                                    the core task they are trying to accomplish.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Identify Chichi’s customer’s desired outcomes associated
+                                    with getting their core task done.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h4>Interviews</h4>
+
+                        <p>
+                            I designed an interview protocol with mostly open-ended
+                            questions aimed at getting to the heart of the struggles
+                            Chichi’s customers face. I then conducted 20 user interviews via
+                            phone call with customers that had bought Chichi’s products
+                            within the last 2 months.
+                        </p>
+
+                        <h4>Affinity diagram</h4>
+
+                        <p>
+                            I then created sticky notes with quotes from the interviews and
+                            consolidated them into main themes. Uncovering initial mental
+                            models.
+                        </p>
+
+                        <figure>
+                            <img id="myimage" src="css/imgs/interview-data.png" alt="image" />
+                        </figure>
+
+                        <i>Initial themes discovered</i>
+
+                        <h3></h3>
+
+                        <h4>Journey Map</h4>
+
+                        <p>
+                            After gaining an initial understanding of the main needs and
+                            behaviors, I designed a map containing the journey of a Chichi’s
+                            customer from beginning to end and connected quotes and themes
+                            to each step of the process. This allowed me to visualize the
+                            mental models of users as the story unfolds and uncover not only
+                            functional needs but powerful emotional and social dimensions.
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/last-iteration-white.png" alt="image" />
+                        </figure>
+
+                        <p>
+                            The middle section of the diagram contains Chichi’s customer
+                            journey from beginning to end. The light green bubbles represent
+                            quotes from the interviews classified as wants, desires, and
+                            gains; the darker green represents uncovered themes consolidated
+                            into emotions; and the black bubbles at the top represent
+                            measurable desired outcomes that can be used to build and
+                            measure possible solutions. When laying out the data this way,
+                            it is easier to dig deep into causality and find processes,
+                            struggles and unmet needs that could otherwise go unnoticed.
+                        </p>
+
+                        <p>
+                            As an example, an uncovered frustration was the inability to
+                            choose substitutes on the fly when choosing a product. This has
+                            to do with the way they currently communicate their orders to
+                            Chichi’s staff. Since Chichi’s customers are usually ordering as
+                            a group and orders are being handled through Snapchat and text,
+                            a member of the friend group asks everyone what they want to
+                            eat, and sends the order to Chichi’s. Since they have to wait
+                            until Chichi’s responds back (usually more than 15 minutes),
+                            when there is an item out of stock, the group member placing the
+                            order has to go back and ask his or her friends what substitutes
+                            they want and then go through the process of writing the order
+                            again. By digging deeper into the frustration of not being able
+                            to identify what items are out of stock I was able to uncover a
+                            deeper underserved need: being able to exchange information with
+                            friends easily when deciding what to order.
+                        </p>
+
+                        <h4>Findings</h4>
+
+                        <figure>
+                            <img src="css/imgs/desired-statements-final.png" alt="image" />
+                        </figure>
+
+                        <p>
+                            After gaining a deeper understanding of the mental model of
+                            Chichi’s customers I hypothesized that chichi’s customers are
+                            looking for solutions that:
+                        </p>
+
+                        <ul>
+                            <li>
+                                <p>
+                                    Increase their ability to exchange information with friends
+                                    when ordering.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Increase their ability to ensure ingredients are fresh and
+                                    good quality.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Increase their ability to share their support to local
+                                    businesses with friends.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Increase their ability to recommend Chichi’s products to
+                                    friends.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Increase their ability to ensure delivery fees are
+                                    predictable.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>Minimize the time it takes to retrieve past orders.</p>
+                            </li>
+
+                            <li>
+                                <p>Minimize the time it takes to locate popular items.</p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Increase their ability to monitor location of food from
+                                    beginning to end.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Increase their ability to monitor progress when ordering.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h2>Design</h2>
+
+                        <figure>
+                            <img src="css/imgs/test1.png" alt="image" />
+                        </figure>
+
+                        <i>Desired outcomes discovered</i>
+
+                        <p></p>
+                    </div>
                 </div>
-              
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="container-principal">
+            <div class="footer-left">
+                <h5>Code and design by <u>Felipe Cabrera</u> ☕</h5>
             </div>
-        </div>    
-    
+
+            <div class="footer-center"></div>
+
+            <div class="footer-right">
+                <p class="footer-company-about"></p>
+                <h5><b>Let’s connect!</b></h5>
+
+                <h5>
+                    <a href="mailto:dcabrera@umich.edu"><u>dcabrera@umich.edu</u></a>
+                </h5>
+            </div>
+        </div>
     </footer>
 
     <script src="app.js"></script>
-
 </body>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2ZYQXBD3HR");
+
+    /* Execute the magnify function: */
+
+    /* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
 
 </html>

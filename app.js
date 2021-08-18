@@ -1,47 +1,72 @@
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
 
+  /* Create magnifier glass: */
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
 
+  /* Insert magnifier glass: */
+  img.parentElement.insertBefore(glass, img);
 
-// paralax effect
-const parallax = document.getElementById("item1")
-const parallax2 = document.getElementById("item2")
-const parallax3 = document.getElementById("item3")
-const parallax4 = document.getElementById("item4")
-const parallax5 = document.getElementById("item5")
-const parallax6 = document.getElementById("item6")
-const parallax7 = document.getElementById("item7")
-const parallax8 = document.getElementById("item8")
-const parallax9 = document.getElementById("item9")
+  /* Set background properties for the magnifier glass: */
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize =
+    img.width * zoom + "px " + img.height * zoom + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
 
-const parallax10 = document.getElementById("about")
-const parallax11 = document.getElementById("experiments")
+  /* Execute a function when someone moves the magnifier glass over the image: */
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
 
-const parallax12 = document.getElementById("experiments")
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Prevent the magnifier glass from being positioned outside the image: */
+    if (x > img.width - w / zoom) {
+      x = img.width - w / zoom;
+    }
+    if (x < w / zoom) {
+      x = w / zoom;
+    }
+    if (y > img.height - h / zoom) {
+      y = img.height - h / zoom;
+    }
+    if (y < h / zoom) {
+      y = h / zoom;
+    }
+    /* Set the position of the magnifier glass: */
+    glass.style.left = x - w + "px";
+    glass.style.top = y - h + "px";
+    /* Display what the magnifier glass "sees": */
+    glass.style.backgroundPosition =
+      "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
+  }
 
-
-// window.addEventListener("scroll", function() {
-//     let Offset = window.pageYOffset;
-//     parallax.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax2.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax3.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax4.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax5.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax6.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax7.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax8.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax9.style.backgroundPositionY = Offset * 0.7 + "px";
-
-//     parallax10.style.backgroundPositionY = Offset * 0.7 + "px";
-//     parallax11.style.PositionY = Offset * 0.7 + "px";
-
-
-// })
-
-
-const menu = document.querySelector("#mobile_menu")
-const menuLinks = document.querySelector('.sidenav')
-
-
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-})
+  function getCursorPos(e) {
+    var a,
+      x = 0,
+      y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return { x: x, y: y };
+  }
+}

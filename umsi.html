@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/html5reset.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYQXBD3HR"></script>
     <script>
@@ -16,49 +16,46 @@
         function gtag() {
             dataLayer.push(arguments);
         }
-        gtag('js', new Date());
+        gtag("js", new Date());
 
-        gtag('config', 'G-2ZYQXBD3HR');
+        gtag("config", "G-2ZYQXBD3HR");
     </script>
 
     <title>Home</title>
 </head>
 
 <body>
+    <div class="container-principal">
+        <!-- Navegation -->
 
-    <!-- Navegation -->
+        <header class="header">
+            <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
+            <div class="logo">
+                <a href="index.html">FELIPE CABRERA</a>
+            </div>
 
-    <header>
-
-        <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
-
-      
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html" id="logo">FELIPE CABRERA</a>
-                </li>
+            <ul class="nav-list text-right">
                 <li class="nav-item">
                     <a href="index.html">Home</a>
                 </li>
-    
+
                 <li class="nav-item">
-                    <a href="contact.html">Contact</a>
+                    <a href="About.html">My story</a>
                 </li>
-         
+
+                <li class="nav-item">
+                    <a href="mailto:dcabrera@umich.edu">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#"></a>
+                </li>
             </ul>
-
-
 
             <!-- <div class="navbar_toggle" id="mobile_menu">
                 <span class="bar"></span><span class="bar"></span>
                 <span class="bar"></span>
             </div> -->
-
-
-
-
-
-
 
             <!-- <div class = "sidenav">
             <ul class="navbar_menu">
@@ -85,379 +82,459 @@
 
             </ul>
         </div>   -->
+        </header>
 
+        <div class="invisible"></div>
 
+        <!-- hero section landing page-->
 
-    </header>
-
-    <!-- hero section landing page-->
-
-    <main id="main-content">
-        <section>
-            <div class="hero-wrap">
-                <h2 class="hero-description">UMSI Website</h2>
-            </div>
-        </section>
-
-        <section class="page">
-            <div class="wrap">
-                <div class="text-holder">
-                    <h3>Target audience</h3>
-                    <p>The School of Information website targets prospective students, employers,
-                        community partners, alumni, donors and current students. In order to gain more
-                        knowledge on how to improve the usability of the site, I chose the most important
-                        target user --prospective students-- and conducted a Heuristic Evaluation analysis of
-                        the tasks they would carry out when exploring the site for the first time. As I
-                        stepped through each task, I recorded issues based on Nielsen’s 10 usability
-                        heuristics for user interface design, assigned a severity rating, and presented both
-                        written recommendations and redesigns that I believe can improve the
-                        learnability, efficiency, memorability and satisfaction of the site.<br></p>
-
-
-                    <h3>Methodology</h3>
-
-                    <p>In order to create a function/task list, I first identified the root needs prospective
-                        students have in the context of choosing a major. To do this I used the
-                        Jobs-to-Be-Done Framework --developed by pioneer Tony Ulwik back in 1991 and later
-                        popularized by Harvard Business School professor Clayton Christensen in 1991-- in order
-                        to identify the core functional, social, and emotional needs of prospective students.<br></p>
-
-
-                    <ul>
-                        <li>
-                            <p> User case 1: Emotional need<i> "When I am deciding whether UMSI is the right fit for me,
-                                    I want to
-                                    know if UMSI and I share the same values and beliefs so I can feel connected and
-                                    safe - feeling of belonging."</i> </p>
-
-                        </li>
-
-                        <li>
-
-                            <p> User case 2: Emotional need<i> "When I am deciding whether UMSI is the right fit for me,
-                                    I want to
-                                    learn what jobs are in high demand so I can be certain about job security in the
-                                    future."</i> </p>
-
-
-                        </li>
-                        <li>
-                            <p> User case 3: Emotional need<i> "When I am deciding whether UMSI is the right fit for me,
-                                    I want to
-                                    learn how much money I can potentially make so I can achieve financial
-                                    security."</i> </p>
-
-                        </li>
-                        <li>
-                            <p> User case 4: Emotional need<i> "When I am deciding whether UMSI is the right fit for me,
-                                    I want to
-                                    quickly get a picture of the companies I would be working for so I can assess
-                                    whether their values align with mine."</i> </p>
-
-                        </li>
-                        <li>
-
-                            <p> User case 5: Functional need<i> "When I am deciding whether UMSI is the right fit for
-                                    me, I want to get
-                                    information about programs offered so I can assess career outcomes. Functional
-                                    need."</i> </p>
-
-                        </li>
-                    </ul>
-
-                    <h3>Needs Summary</h3>
-                    <p>UMSI site targets prospective students who want to:</p>
-
-                    <ol>
-                        <li>
-                            <p>Feel connected and safe feeling of belonging. Emotional need.</p>
-
-                        </li>
-
-                        <li>
-                            <p>Know if UMSIs values are in sync with their personal values and beliefs.
-                                Emotional need.</p>
-
-                        </li>
-
-                        <li>
-                            <p>Have job security in the future. Emotional need.</p>
-
-                        </li>
-
-                        <li>
-                            <p>Achieve financial security. Emotional need.</p>
-
-                        </li>
-
-                        <li>
-                            <p>Assess career outcomes. Functional need.</p>
-
-                        </li>
-
-                        <li>
-                            <p>Know how to apply to UMSI. Functional need.</p>
-
-                        </li>
-                        <li>
-                            <p>Contact UMSI faculty/staff for questions. Functional need.</p>
-
-                        </li>
-
-                    </ol>
-
-
-                    <h3>Tasks</h3>
-                    <ul>
-                        <li>
-                            <p>Find the mission, values and purpose of the school:This task targets users’ need to feel
-                                connected and safe-- feeling of belonging. (Emotional need).</p>
-
-                        </li>
-                        <li>
-                            <p>Find information about a specific program:Feel connected and safe feeling of belonging.
-                                Emotional need.</p>
-
-                        </li>
-                    </ul>
-
-
-                    <h3>Rating system</h3>
-                    <p>Keeping in mind Nielsen’s 10 usability heuristics for user interface design I recorded each
-                        problem and assigned one of the following severity ratings to it:</p>
-                    <ol>
-                        <li>
-                            <p>Minor Issue: Hinders the user's ability to navigate and should be fixed when possible</p>
-
-                        </li>
-                        <li>
-                            <p>Major Issue: Frustrates or confuses users and requires repair as soon as possible</p>
-
-                        </li>
-
-                        <li>
-                            <p>Catastrophic Issue: Prohibits users from performing their given task and requires an
-                                immediate modification</p>
-
-                        </li>
-                    </ol>
-
-
-                    <h3>Findings and Recommendations</h3>
-                    <h4>Problem 1</h4>
-                    <p><b>Actionable and non-actionable elements of the site have the same color. </b>When hovering over
-                        the
-                        menu handle “About UMSI'', the color changes from green to yellow (the same yellow of the title
-                        “Information Changes Everything”, the button “UMSI” COVID-19 Updates and Resources” and “Header
-                        Menu”). Since the same yellow is assigned to multiple elements on the same page, it is difficult
-                        for the user to associate it with an indication of status. Internal consistency is also broken
-                        as the design of the title “information changes everything” looks almost the same as the other
-                        yellow elements</p>
-
-
-
-
-                    <figure>
-                        <img src="css/imgs/case1/problem1.png" alt="image">
-
-
-                    </figure>
-
-                    <i class="legend">Heuristic violated: Visibility of system status, Severity: Minor Issue (Hinders
-                        the user's ability to navigate and should be fixed when possible)</i>
-
-                    <figure>
-                        <img src="css/imgs/case1/solution1.png" alt="image">
-                    </figure>
-
-
-                    <i class="legend">Redesign</i>
-
-                    <br>
-
-                    <h4>Problem 2</h4>
-                    <p><b>Main buttons on the main menu and buttons on the header menu at the top of the page don’t show
-                        any feedback to the user when hovering over </b>while drop-down menu buttons change their format
-                            to bold. This breaks internal consistency as the user should not have to use cognitive
-                            resources to understand why different menus give feedback and some don’t. When users are
-                            first exposed to a menu feedback, they build a mental model of how this feedback works and
-                            assigns a meaning to it. When exposed to the same cue (another button) and the feedback is
-                            not present, users might see it as an error and ignore it.</p>
-
-
-
-
-                    <figure>
-                        <img src="css/imgs/case1/problem2.png" alt="image">
-
-
-                    </figure>
-
-                    <i class="legend">Heuristic violated: Consistency and Standards, Severity: Minor Issue - Hinders the
-                        user's ability to navigate and should be fixed when possible</i>
-
-                    <figure>
-                        <img src="css/imgs/case1/solution3.png" alt="image">
-                    </figure>
-
-
-                    <i class="legend">Recommendation: This can be fixed by giving all actionable buttons the same or
-                        similar feedback so users don’t have to rely on extra cognitive effort to understand their
-                        function or meaning.</i>
-
-                    <br>
-
-                    <h4>Problem 3</h4>
-                    <p><b>Drop-down menus are too long and have too many options. </b>This increases visual-search time (amount of time it takes the user to visually identify the piece of information they are looking for) and movement time (time it takes to move the cursor to get to the element). Fitts' law states that the amount of time required for a person to move a mouse cursor to a target area is a function of the distance to the target divided by the size of the target. In the screenshot below, we could see how only five menu options are within reach above the second green line. Past this line, options lose visibility..</p>
-
-                    <figure>
-                        <img src="css/imgs/case1/problem3.png" alt="image">
-
-
-                    </figure>
-
-                    <i class="legend">Heuristic violated: Consistency and Standards. Severity: Major Issue - Frustrates or confused users and requires repair as soon as possible</i>
-
-                    <figure>
-                        <img src="css/imgs/case1/solution3.png" alt="image">
-                    </figure>
-
-
-                    <i class="legend">Recommendation: This problem could be fixed by having a mega menu or rectangular menu. This will prevent any scrolling problems that users might encounter when using a small screen and will reduce the time it takes to both visually identify the button and click on it.</i>
-
-                    <br>
-
-                    <h4>Problem 4</h4>
-                    <p><b>Titles and subtitles on the main page are not properly aligned. </b>The title "Information Changes everything" is too close to the top edge and is not aligned with other elements of the site such as the “Changing Access” title. This creates a sense of unease and imbalance.</p>
-
-                    <figure>
-                        <img src="css/imgs/case1/problem4.png" alt="image">
-
-
-                    </figure>
-
-                    <i class="legend">Heuristic violated: Aesthetic and Minimalist Design . Severity: Minor Issue - Hinders the user's ability to navigate and should be fixed when possible</i>
-
-                    <figure>
-                        <img src="css/imgs/case1/solution4.png" alt="image">
-                    </figure>
-
-
-                    <i class="legend">Recommendation: Ensure that layouts are visually balanced by designing on a grid. The rule of thirds can be applied to place emphasis on the title and the area of the picture we want users to look at first.</i>
-                     
-                    <br>
-
-                    <h4>Problem 5</h4>
-                    <p>The Header, Navigation Menu, Content and Footer sections <b>appear to be grouped together</b> due to the white background and different sections are too close to each other. This might confuse users as they can’t easily identify what the different sections of the site are. In the case of the UMSI homepage, the lack of a change in background color, makes sections like the header and content look like one piece of information --decreasing discoverability of relevant information. Additionally, the white space between the articles in the “News” section is the same as the “Events'' section. This small detail makes the “Events” section harder to identify.</p>
-
-                    <figure>
-                        <img src="css/imgs/case1/problem5.png" alt="image">
-
-
-                    </figure>
-
-                    <i class="legend">Heuristic violated: Aesthetic and Minimalist Design . Severity: Minor Issue - Hinders the user's ability to navigate and should be fixed when possible</i>
-
-                    <figure>
-                        <img src="css/imgs/case1/solution5.png" alt="image">
-                    </figure>
-
-
-                    <i class="legend">Recommendation: A good way to tackle this would be to place the text over the picture to communicate the purpose of the school (I recommend using a picture that shows people as opposed to a building. This would align better with the message the school wants to convey about its core principles: risk taking, diverse community, fun and progressive. Showcasing people builds empathy and portrays the school as more than a physical place)
-                    </i>
-
-
-
-                    <h3>Takeways</h3>
-
-                    <p>Two catastrophic, four major and two minor usability problems in the site’s navigation menu, homepage, mission page and BSI were uncovered.<br></p>
-
-                    <ul>
-                        <li>
-                            <h4>Catastrophic Issues</h4>
-                            <ul>
-                                <li>
-                                    <p>Too many colors on the homepage: White, blue, purple, black, green. Heuristic: Aesthetic and Minimalist Design.</p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Picture at the top of the “Mission” page occupies most of the space. Heuristic: Aesthetic and Minimalist Design.
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <h4>Major Issues</h4>
-                            <ul>
-                                <li>
-                                    <p>Drop-down menus are too long and have too many options. Heuristic: Consistency and Standards.</p>      
-                                                          </li>
-                                <li>
-
-                                    <p>The Header, Navigation Menu, Content and Footer sections appear to be grouped together due to the white background and different sections are too close to each other. Heuristic: Aesthetic and Minimalist Design.</p>
-                                </li>
-                                <li>
-                                    <p>Sections of the page have a very similar visual weight. Heuristic: Aesthetic and Minimalist Design.</p>
-                                </li>
-                                <li>
-                                    <p>Users need to scroll down, scan the video, and read the text in order to find the most important information, increasing visual-search time. Heuristic: Recognition rather than recall.</p>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <h4>Minor Issues</h4>
-                            <ul>
-                                <li>
-                                    <p>Actionable and non-actionable elements of the site have the same color. Heuristic: Visibility of System Status</p>
-                                </li>
-                                <li>
-                                    <p>Main buttons on the main menu and buttons on the header menu at the top of the page don’t show any feedback to the user when hovering over while drop-down menu buttons change their format to bold Heuristic: Consistency and Standards.</p>
-                                </li>
-                                <li><p>Titles and subtitles on the main page are not properly aligned. Heuristic: Aesthetic and Minimalist Design.</p></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-
-
-
-                
-
-
+        <main id="main-content">
+            <section>
+                <div class="hero-wrap">
+                    <h2 class="hero-description">UMSI Website</h2>
                 </div>
+            </section>
 
+            <section class="page">
+                <div class="wrap">
+                    <div class="text-holder">
+                        <h3>Target audience</h3>
+                        <p>
+                            The School of Information website targets prospective students,
+                            employers, community partners, alumni, donors and current
+                            students. In order to gain more knowledge on how to improve the
+                            usability of the site, I chose the most important target user
+                            --prospective students-- and conducted a Heuristic Evaluation
+                            analysis of the tasks they would carry out when exploring the
+                            site for the first time. As I stepped through each task, I
+                            recorded issues based on Nielsen’s 10 usability heuristics for
+                            user interface design, assigned a severity rating, and presented
+                            both written recommendations and redesigns that I believe can
+                            improve the learnability, efficiency, memorability and
+                            satisfaction of the site.<br />
+                        </p>
+
+                        <h3>Methodology</h3>
+
+                        <p>
+                            In order to create a function/task list, I first identified the
+                            root needs prospective students have in the context of choosing
+                            a major. To do this I used the Jobs-to-Be-Done Framework
+                            --developed by pioneer Tony Ulwik back in 1991 and later
+                            popularized by Harvard Business School professor Clayton
+                            Christensen in 1991-- in order to identify the core functional,
+                            social, and emotional needs of prospective students.<br />
+                        </p>
+
+                        <ul>
+                            <li>
+                                <p>
+                                    User case 1: Emotional need<i>
+                                        "When I am deciding whether UMSI is the right fit for me,
+                                        I want to know if UMSI and I share the same values and
+                                        beliefs so I can feel connected and safe - feeling of
+                                        belonging."</i>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    User case 2: Emotional need<i>
+                                        "When I am deciding whether UMSI is the right fit for me,
+                                        I want to learn what jobs are in high demand so I can be
+                                        certain about job security in the future."</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    User case 3: Emotional need<i>
+                                        "When I am deciding whether UMSI is the right fit for me,
+                                        I want to learn how much money I can potentially make so I
+                                        can achieve financial security."</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    User case 4: Emotional need<i>
+                                        "When I am deciding whether UMSI is the right fit for me,
+                                        I want to quickly get a picture of the companies I would
+                                        be working for so I can assess whether their values align
+                                        with mine."</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    User case 5: Functional need<i>
+                                        "When I am deciding whether UMSI is the right fit for me,
+                                        I want to get information about programs offered so I can
+                                        assess career outcomes. Functional need."</i>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h3>Needs Summary</h3>
+                        <p>UMSI site targets prospective students who want to:</p>
+
+                        <ol>
+                            <li>
+                                <p>
+                                    Feel connected and safe feeling of belonging. Emotional
+                                    need.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Know if UMSIs values are in sync with their personal values
+                                    and beliefs. Emotional need.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>Have job security in the future. Emotional need.</p>
+                            </li>
+
+                            <li>
+                                <p>Achieve financial security. Emotional need.</p>
+                            </li>
+
+                            <li>
+                                <p>Assess career outcomes. Functional need.</p>
+                            </li>
+
+                            <li>
+                                <p>Know how to apply to UMSI. Functional need.</p>
+                            </li>
+                            <li>
+                                <p>
+                                    Contact UMSI faculty/staff for questions. Functional need.
+                                </p>
+                            </li>
+                        </ol>
+
+                        <h3>Tasks</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Find the mission, values and purpose of the school:This task
+                                    targets users’ need to feel connected and safe-- feeling of
+                                    belonging. (Emotional need).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Find information about a specific program:Feel connected and
+                                    safe feeling of belonging. Emotional need.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h3>Rating system</h3>
+                        <p>
+                            Keeping in mind Nielsen’s 10 usability heuristics for user
+                            interface design I recorded each problem and assigned one of the
+                            following severity ratings to it:
+                        </p>
+                        <ol>
+                            <li>
+                                <p>
+                                    Minor Issue: Hinders the user's ability to navigate and
+                                    should be fixed when possible
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Major Issue: Frustrates or confuses users and requires
+                                    repair as soon as possible
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Catastrophic Issue: Prohibits users from performing their
+                                    given task and requires an immediate modification
+                                </p>
+                            </li>
+                        </ol>
+
+                        <h3>Findings and Recommendations</h3>
+                        <h4>Problem 1</h4>
+                        <p>
+                            <b>Actionable and non-actionable elements of the site have the
+                                same color. </b>When hovering over the menu handle “About UMSI'', the color
+                            changes from green to yellow (the same yellow of the title
+                            “Information Changes Everything”, the button “UMSI” COVID-19
+                            Updates and Resources” and “Header Menu”). Since the same yellow
+                            is assigned to multiple elements on the same page, it is
+                            difficult for the user to associate it with an indication of
+                            status. Internal consistency is also broken as the design of the
+                            title “information changes everything” looks almost the same as
+                            the other yellow elements
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/case1/problem1.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Heuristic violated: Visibility of system status, Severity:
+                            Minor Issue (Hinders the user's ability to navigate and should
+                            be fixed when possible)</i>
+
+                        <figure>
+                            <img src="css/imgs/case1/solution1.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Redesign</i>
+
+                        <br />
+
+                        <h4>Problem 2</h4>
+                        <p>
+                            <b>Main buttons on the main menu and buttons on the header menu
+                                at the top of the page don’t show any feedback to the user
+                                when hovering over </b>while drop-down menu buttons change their format to bold. This
+                            breaks internal consistency as the user should not have to use
+                            cognitive resources to understand why different menus give
+                            feedback and some don’t. When users are first exposed to a menu
+                            feedback, they build a mental model of how this feedback works
+                            and assigns a meaning to it. When exposed to the same cue
+                            (another button) and the feedback is not present, users might
+                            see it as an error and ignore it.
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/case1/problem2.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Heuristic violated: Consistency and Standards, Severity: Minor
+                            Issue - Hinders the user's ability to navigate and should be
+                            fixed when possible</i>
+
+                        <figure>
+                            <img src="css/imgs/case1/solution3.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Recommendation: This can be fixed by giving all actionable
+                            buttons the same or similar feedback so users don’t have to rely
+                            on extra cognitive effort to understand their function or
+                            meaning.</i>
+
+                        <br />
+
+                        <h4>Problem 3</h4>
+                        <p>
+                            <b>Drop-down menus are too long and have too many options. </b>This increases visual-search
+                            time (amount of time it takes the
+                            user to visually identify the piece of information they are
+                            looking for) and movement time (time it takes to move the cursor
+                            to get to the element). Fitts' law states that the amount of
+                            time required for a person to move a mouse cursor to a target
+                            area is a function of the distance to the target divided by the
+                            size of the target. In the screenshot below, we could see how
+                            only five menu options are within reach above the second green
+                            line. Past this line, options lose visibility..
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/case1/problem3.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Heuristic violated: Consistency and Standards. Severity: Major
+                            Issue - Frustrates or confused users and requires repair as soon
+                            as possible</i>
+
+                        <figure>
+                            <img src="css/imgs/case1/solution3.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Recommendation: This problem could be fixed by having a mega
+                            menu or rectangular menu. This will prevent any scrolling
+                            problems that users might encounter when using a small screen
+                            and will reduce the time it takes to both visually identify the
+                            button and click on it.</i>
+
+                        <br />
+
+                        <h4>Problem 4</h4>
+                        <p>
+                            <b>Titles and subtitles on the main page are not properly
+                                aligned. </b>The title "Information Changes everything" is too close to the
+                            top edge and is not aligned with other elements of the site such
+                            as the “Changing Access” title. This creates a sense of unease
+                            and imbalance.
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/case1/problem4.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Heuristic violated: Aesthetic and Minimalist Design . Severity:
+                            Minor Issue - Hinders the user's ability to navigate and should
+                            be fixed when possible</i>
+
+                        <figure>
+                            <img src="css/imgs/case1/solution4.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Recommendation: Ensure that layouts are visually balanced by
+                            designing on a grid. The rule of thirds can be applied to place
+                            emphasis on the title and the area of the picture we want users
+                            to look at first.</i>
+
+                        <br />
+
+                        <h4>Problem 5</h4>
+                        <p>
+                            The Header, Navigation Menu, Content and Footer sections
+                            <b>appear to be grouped together</b> due to the white background
+                            and different sections are too close to each other. This might
+                            confuse users as they can’t easily identify what the different
+                            sections of the site are. In the case of the UMSI homepage, the
+                            lack of a change in background color, makes sections like the
+                            header and content look like one piece of information
+                            --decreasing discoverability of relevant information.
+                            Additionally, the white space between the articles in the “News”
+                            section is the same as the “Events'' section. This small detail
+                            makes the “Events” section harder to identify.
+                        </p>
+
+                        <figure>
+                            <img src="css/imgs/case1/problem5.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Heuristic violated: Aesthetic and Minimalist Design . Severity:
+                            Minor Issue - Hinders the user's ability to navigate and should
+                            be fixed when possible</i>
+
+                        <figure>
+                            <img src="css/imgs/case1/solution5.png" alt="image" />
+                        </figure>
+
+                        <i class="legend">Recommendation: A good way to tackle this would be to place the
+                            text over the picture to communicate the purpose of the school
+                            (I recommend using a picture that shows people as opposed to a
+                            building. This would align better with the message the school
+                            wants to convey about its core principles: risk taking, diverse
+                            community, fun and progressive. Showcasing people builds empathy
+                            and portrays the school as more than a physical place)
+                        </i>
+
+                        <h3>Takeways</h3>
+
+                        <p>
+                            Two catastrophic, four major and two minor usability problems in
+                            the site’s navigation menu, homepage, mission page and BSI were
+                            uncovered.<br />
+                        </p>
+
+                        <ul>
+                            <li>
+                                <h4>Catastrophic Issues</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Too many colors on the homepage: White, blue, purple,
+                                            black, green. Heuristic: Aesthetic and Minimalist
+                                            Design.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Picture at the top of the “Mission” page occupies most
+                                            of the space. Heuristic: Aesthetic and Minimalist
+                                            Design.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Major Issues</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Drop-down menus are too long and have too many options.
+                                            Heuristic: Consistency and Standards.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The Header, Navigation Menu, Content and Footer sections
+                                            appear to be grouped together due to the white
+                                            background and different sections are too close to each
+                                            other. Heuristic: Aesthetic and Minimalist Design.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sections of the page have a very similar visual weight.
+                                            Heuristic: Aesthetic and Minimalist Design.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Users need to scroll down, scan the video, and read the
+                                            text in order to find the most important information,
+                                            increasing visual-search time. Heuristic: Recognition
+                                            rather than recall.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Minor Issues</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Actionable and non-actionable elements of the site have
+                                            the same color. Heuristic: Visibility of System Status
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Main buttons on the main menu and buttons on the header
+                                            menu at the top of the page don’t show any feedback to
+                                            the user when hovering over while drop-down menu buttons
+                                            change their format to bold Heuristic: Consistency and
+                                            Standards.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Titles and subtitles on the main page are not properly
+                                            aligned. Heuristic: Aesthetic and Minimalist Design.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="container-principal">
+            <div class="footer-left">
+                <h5>Code and design by <u>Felipe Cabrera</u> ☕</h5>
             </div>
 
+            <div class="footer-center"></div>
 
-        </section>
+            <div class="footer-right">
+                <p class="footer-company-about"></p>
+                <h5><b>Let’s connect!</b></h5>
 
-
-
-    </main>
-
-
-    
-<footer>
-    <div class = "footer_container">
-        <div class ="footer_container_items">
-            
-            <div class = "footer_info">
-                <p>Made by Felipe Cabrera © 2021</p>
-                <p>Graduate of UX Design from the University of Michigan School of Information.</p>
-    
-                <p>dcabrera@umich.edu</p>
-
+                <h5>
+                    <a href="mailto:dcabrera@umich.edu"><u>dcabrera@umich.edu</u></a>
+                </h5>
             </div>
-          
         </div>
-    </div>    
-
-</footer>
+    </footer>
 
     <script src="app.js"></script>
-
 </body>
 
 </html>

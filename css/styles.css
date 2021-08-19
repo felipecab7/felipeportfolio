@@ -173,6 +173,7 @@ footer{
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
+    
 }
 
 
@@ -1093,7 +1094,7 @@ figure img {
   align-items: center;
   justify-content: center;
   align-content: center;
-  background-color: rgb(0, 75, 187);
+  background-color: rgb(28, 28, 202);
   padding: 8px;
   font-size: 14px;
   border: none;
@@ -1705,6 +1706,12 @@ form {
 /* TABLET VERSION */
 
 @media screen and (min-width: 768px) {
+
+  .button-footer {
+    margin-left:80px;
+    
+   
+  }
 
 
 

@@ -118,13 +118,17 @@
   padding-top: 2px;
 }
 
+#correo {
+  color:rgb(33, 33, 189);
+}
+
 .skills-button {
   padding: 10px;
   border: 1px solid rgb(206, 206, 206) ;
   font-size: 12px;
   border-radius: 10px;
   color: rgb(128, 128, 128);
-  width: 150px;
+  width: 140px;
   margin-right: 8px;
   margin-bottom: 8px;
  

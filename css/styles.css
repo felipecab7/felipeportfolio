@@ -506,6 +506,7 @@ body {
   flex-direction: column;
   font-family:  "silkamedium", "silka", sans-serif;
   background: var(--color-gray100);
+  letter-spacing: -.5px;
 }
 
 main {

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2ZYQXBD3HR"
+    ></script>
+
+    <title>SI 206</title>
+  </head>
+
+  <body>
+    <div class="container-principal">
+      <!-- Navegation -->
+
+      <header class="header">
+        <div class="background-header">
+          <a id="skip" alt="skip to content" href="#main-content"
+            >Skip to Content</a
+          >
+          <div class="logo">
+            <a href="index.html">FELIPE CABRERA</a>
+          </div>
+
+          <ul class="nav-list text-right">
+            <li class="nav-item">
+              <a href="index.html">Work</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html">About me</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="navbar_toggle" id="mobile_menu">
+                    <span class="bar"></span><span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
+
+        <!-- <div class = "sidenav">
+                <ul class="navbar_menu">
+    
+                    <li class="navbar_menu_item" >
+                        <a href="index.html" class = "navbar_menu_item_link"  style = "background: #000000 ; color:white; text-decoration: line-through" >HOME</a>
+                    </li>
+    
+                    <li class="navbar_menu_item">
+                        <a href="about.html" class = "navbar_menu_item_link">MY STORY</a>
+                    </li>
+            
+                    <li class="navbar_menu_item" >
+                        <a href="experiments.html" class = "navbar_menu_item_link">IDEAS</a>
+                    </li>
+    
+                    <li class="navbar_menu_item" >
+                        <a href="notes.html" class = "navbar_menu_item_link">NOTES</a>
+                    </li>
+            
+                    <li class="navbar_menu_item">
+                        <a href="contact.html" class = "navbar_menu_item_link">CONTACT</a>
+                    </li>
+    
+                </ul>
+            </div>   -->
+      </header>
+
+      <!-- hero section landing page-->
+
+      <main id="main-content">
+        <a href="index.html"><p>< Back to Home Page</p></a>
+        <section>
+          <div class="hero-wrap">
+            <h2 class="hero-description">User Sentiment on Twitter</h2>
+            <h4>Skills</h4>
+            <div class="skills-row">
+              <div class="skills-button">
+                <div>Program Server-Side</div>
+                <div class="software">
+                  <b>Python, Rest API, Data Visualization</b>
+                </div>
+              </div>
+
+              <div class="skills-button">
+                <div>Program Databases</div>
+                <div class="software"><b>SQLite</b></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page">
+          <div class="wrap">
+            <div class="text-holder">
+              <figure id="main-photo-cases">
+                <img src="css/imgs/twitter-final.jpg" alt="image" />
+              </figure>
+
+              <h3>SI 206: Data-Oriented Programming Final Project</h3>
+
+              <p>
+                For my SI 206 final project, I was asked to gather data from
+                APIs, store that data in a database, calculate new data from the
+                database, create visualizations from the calculated data and
+                print out a report with the calculated data and visualizations.
+              </p>
+
+              <h4>Goals:</h4>
+
+              <ol>
+                <li>
+                  <p>Create a fully-working program without any scaffolding.</p>
+                </li>
+
+                <li>
+                  <p>Create and modify tables in a SQLite Database.</p>
+                </li>
+
+                <li>
+                  <p>Utilize APIs (including researching possible methods).</p>
+                </li>
+
+                <li>
+                  <p>
+                    Utilize visualization software (including researching
+                    options).
+                  </p>
+                </li>
+              </ol>
+
+              <h3>Social Influence and Sentiment on Twitter</h3>
+
+              <p>
+                Multiple theories of social influence explain that our
+                attitudes, feelings and beliefs are influenced by the groups we
+                belong to. Since the emergence of social media, our ability to
+                connect and belong to large groups has increased; raising
+                questions about its impact on our happiness and mental health.
+                Twitter is a great example of how we can easily create a network
+                (large or small), share our thoughts and learn what the members
+                of the network are thinking. For this project, I decided to
+                explore the relation between the size of those networks (number
+                of people users follow) and the emotional tone of their tweets.
+              </p>
+
+              <p>
+                I used a sample of 7355 tweets, gathered in the span of a week
+                from 1000 cities across the U.S, from 4878 unique users. I
+                stored the data in database tables using SQL and calculated it
+                using a custom-built sentiment classifier. The classifier
+                analyses a tweet’s emotional tone by counting the number of
+                positive and negative words and labels it as either “Positive”
+                or “Negative”.
+              </p>
+
+              <h4>Results</h4>
+
+              <figure>
+                <img src="css/imgs/results1.png" alt="image" />
+              </figure>
+
+              <i class="legend"
+                >The first graph shows a negative correlation between the number
+                of people users follow and the number of positive tweets they
+                tweeted in the span of seven days</i
+              >
+
+              <br />
+              <br />
+              <br />
+
+              <figure>
+                <img src="css/imgs/results2.png" alt="image" />
+              </figure>
+
+              <i class="legend"
+                >No clear pattern was found on the second graph due to the
+                limited number of tweets labeled as negative</i
+              >
+
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <p>
+                Given the subjective nature of the tweets, the method used in
+                this project cannot be utilized alone to judge whether a tweet
+                should be labeled as having a positive or a negative emotional
+                tone. The results above show a correlation between the number of
+                people a user follows and the amount of positive words they
+                include in their tweets regardless of what the emotional tone of
+                the tweet is. The more people users follow, the less positive
+                words they used in the span of seven days.
+              </p>
+
+              <p>
+                <b> Link to project: </b>
+                <a href="https://github.com/felipecab7/TwitterSentimentSI206"
+                  ><u>https://github.com/felipecab7/TwitterSentimentSI206</u></a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="next-after-buttons">
+            <a href="umsi.html">
+              <div class="footerbutton">< Previous Case</div>
+            </a>
+
+            <a href="matterhorn.html">
+              <div class="footerbutton">Next Case ></div>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer-distributed">
+      <div class="container-principal">
+        <div class="footer-left">
+          <p class="footer-links">
+            <a href="mailto:dcabrera@umich.edu">Let's connect!</a>
+          </p>
+
+          <p class="footer-company-name">
+            Feel free to contact me if you are interested in learning more about
+            my experience.
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <h5>
+            <a href="mailto:dcabrera@umich.edu">
+              <div class="button-footer">dcabrera@umich.edu</div>
+            </a>
+          </h5>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            © 2021 All rights reserved - Designed & Coded by Felipe Cabrera.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2ZYQXBD3HR");
+
+    /* Execute the magnify function: */
+
+    /* Specify the id of the image, and the strength of the magnifier glass: */
+  </script>
+</html>

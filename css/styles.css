@@ -681,7 +681,7 @@ a {
 
 
 .nice-link {
-  border-bottom: 1px solid rgb(255, 255, 255);
+  
   padding-bottom: 120px;
   color: black !important;
 
@@ -1761,6 +1761,13 @@ form {
 
 }
 
+#video {
+  border-radius: 30px;
+}
+
+.layouts__main___4TklR {
+  height: 300px !important;
+}
 
 
 /* TABLET VERSION */
@@ -1773,7 +1780,7 @@ form {
 
 
   .nice-link {
-    border-bottom: 1px solid rgb(97, 97, 97);
+    
     padding-bottom: 120px;
     color: black !important;
     

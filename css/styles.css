@@ -814,6 +814,7 @@ b { color: #000000;
   font-weight: 200;
   font-family: "silkalight";
   color: rgb(53, 53, 53);
+ 
 
 }
 
@@ -1809,14 +1810,7 @@ form {
   }
 
 
-  .legend {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 200;
-    font-family: "silkalight";
-    color: rgb(53, 53, 53);
-
-  }
+  
 
   figure {position: relative;}
 

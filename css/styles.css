@@ -239,7 +239,7 @@ h5 {
 p {
   font-family: "silkaregular";
   font-weight: 200;
-  font-size: 16px;
+  font-size: 18px;
   color: rgb(97, 97, 97);
   margin: 0 0 1rem;
   line-height: 1.8rem;
@@ -307,11 +307,43 @@ b { color: #000000;
   -ms-flex-item-align: baseline;
   align-self: baseline;
   color: rgb(27, 27, 27);
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 600;
   font-family: "silkasemibold";
 }
+
+.light {
+  font-family: "silkaregular" !important;
+}
+
+.f-22 {
+  font-size: 30px !important;
+  margin: 0px !important;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+
+.pb-2 {
+  padding-bottom: 20px;
+}
+
+
+.gap10{
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+
+
+
+
 
 .h4 {
   margin-top: 0px;
@@ -352,7 +384,7 @@ b { color: #000000;
   margin-left: -0.05em;
   color: rgb(19, 19, 19);
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 400;
   font-family: "silkamedium";
   color: black;
@@ -366,9 +398,25 @@ b { color: #000000;
   line-height: 1.2;
   font-weight: 400;
   font-family: "silkamedium";
-  color: rgb(77, 77, 77);
+  color: rgb(112, 112, 112);
 }
 
+.displayflex {
+  display: flex !important;
+  justify-content:space-between !important;
+
+}
+
+.p4 {
+  margin-bottom: 0px;
+  margin-left: -0.05em;
+  color: rgb(19, 19, 19);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "silkaregular";
+  color: rgb(77, 77, 77);
+}
 
 .bold {
   font-family: "silkasemibold";
@@ -599,10 +647,25 @@ b { color: #000000;
 
 }
 
+.highlight-blue {
+
+  color: rgb(17, 143, 165);
+  
+}
+
+.p-0 {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.blackcolor {
+  color: black !important;
+}
+
 .next-after-buttons {
   width: 100%;
   height: 80px;
-  max-width: 760px;
+  
   display: flex;
   padding: 1rem 0 1rem;
   position: relative;
@@ -630,7 +693,7 @@ b { color: #000000;
 
 .text-holder {
   width: 100%;
-  max-width: 760px;
+ 
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1970,6 +2033,16 @@ form {
   font-size: 24px;
 }
 
+.h3 {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+
+
 .footer-r button {
   padding-left: 0px;
 }
@@ -2020,7 +2093,7 @@ form {
   }
 
   .cases .row {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 }
 

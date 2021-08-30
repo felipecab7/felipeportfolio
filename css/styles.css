@@ -653,6 +653,13 @@ b { color: #000000;
   
 }
 
+.highlight-purple {
+
+  color: rgb(187, 0, 187);
+  
+}
+
+
 .p-0 {
   padding: 0px !important;
   margin: 0px !important;

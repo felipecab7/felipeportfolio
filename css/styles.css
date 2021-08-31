@@ -48,6 +48,7 @@
   font-style: normal;
 }
 
+
 @font-face {
   font-family: "silkaregular";
   src: url("Silka-Roman-Webfont/silka-regular-webfont.eot");
@@ -153,6 +154,21 @@
 
 }
 
+.fa-arrow-right {
+  width: 12px;
+
+}
+
+.highlight-grey {
+  color: rgb(199, 199, 199) !important;
+}
+
+.padding-10 {
+  margin: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 
 .container-principal {
   max-width: 1100px;
@@ -221,6 +237,10 @@ h3 {
   margin: 1.25rem 0;
 }
 
+.width100 {
+  width: 20vw !important;
+}
+
 h4 {
   font-family: "silkamedium";
   font-size: 20px;
@@ -240,7 +260,7 @@ p {
   font-family: "silkaregular";
   font-weight: 200;
   font-size: 18px;
-  color: rgb(97, 97, 97);
+  color: var(--buttons);
   margin: 0 0 1rem;
   line-height: 1.8rem;
 }
@@ -341,6 +361,10 @@ b { color: #000000;
 }
 
 
+.flexstart {
+  justify-content: flex-start !important;
+}
+
 
 
 
@@ -405,6 +429,10 @@ b { color: #000000;
   display: flex !important;
   justify-content:space-between !important;
 
+}
+
+.displayflex2 {
+  display: flex !important;
 }
 
 .p4 {
@@ -1940,6 +1968,10 @@ form {
   margin-bottom: 80px;
 
     
+}
+
+.width100 {
+  width: 80vw !important;
 }
 
 .cases .text-right {

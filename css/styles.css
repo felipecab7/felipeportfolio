@@ -506,6 +506,7 @@ b { color: #000000;
 .new-footer {
   display:flex;
   justify-content: space-between;
+  margin-top: 50px;
   
   padding-bottom: 25px;
 }
@@ -1754,6 +1755,14 @@ i {
   
 }
 
+.cropped2 {
+  width: 1000px; /* width of container */
+  height: 500px; /* height of container */
+  object-fit: cover;
+  object-position: -120px -120px; /* try 20px 10px */ 
+  margin-bottom: 60px;
+}
+
 
 
 
@@ -1853,7 +1862,7 @@ form {
 .main_message_content {
    
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   padding-right: 1rem;
   
 }
@@ -1952,12 +1961,23 @@ form {
 
 
 
-
+.margin0 {
+  margin-bottom:20px !important;
+  margin-top: 0px !important;
+}
 /* TABLET VERSION */
 
 
 /* ------------------------------------------------------------------------- */
 
+.cases-image {
+  margin-bottom: 30px;
+}
+
+.row-1 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
 
 
 
@@ -1965,13 +1985,44 @@ form {
 
 .cases .row {
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 
     
+  
+}
+
+.cropped2 {
+  width: 400px; /* width of container */
+  height: 250px; /* height of container */
+  object-fit: cover;
+  object-position: -50px -40px; /* try 20px 10px */ 
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+
+.cases-image {
+  margin-top: 32px;
+}
+
+.column {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.row-1 {
+  margin-top: 34px;
+  margin-bottom:0px;
+}
+
+.main_message_content {
+  margin-bottom: 0px;
+  margin-top: 4px;
 }
 
 .width100 {
   width: 80vw !important;
+  margin-top: 20px;
 }
 
 .cases .text-right {
@@ -1999,7 +2050,7 @@ form {
 
 
 .cases .column img {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .button-main-page a {
@@ -2132,7 +2183,7 @@ form {
   }
 
   .cases .row {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 

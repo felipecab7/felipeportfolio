@@ -126,7 +126,7 @@
 
   /* secondary color variables */
 
-  --buttons: #797979;
+  --buttons: #5e5e5e;
 
   --color-secondary-900: #00696a;
   --color-secondary-800: #008c96;
@@ -168,6 +168,9 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+
+
+
 
 
 .container-principal {
@@ -408,7 +411,7 @@ b { color: #000000;
   margin-left: -0.05em;
   color: rgb(19, 19, 19);
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.6;
   font-weight: 400;
   font-family: "silkamedium";
   color: black;
@@ -682,9 +685,20 @@ b { color: #000000;
   
 }
 
+.bigfont {
+  font-size: 22px !important;
+}
+
+.highlight-black {
+
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
+}
+
 .highlight-purple {
 
-  color: rgb(187, 0, 187);
+  color: rgb(143, 0, 187);
   
 }
 
@@ -1862,7 +1876,7 @@ form {
 .main_message_content {
    
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
   padding-right: 1rem;
   
 }
@@ -1959,7 +1973,24 @@ form {
   background-color:  #1b1b1b;
 }
 
+.cases-margin {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+}
 
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.pb-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.text-indent {
+  text-indent: 20px;
+}
 
 .margin0 {
   margin-bottom:20px !important;
@@ -1967,7 +1998,29 @@ form {
 }
 /* TABLET VERSION */
 
+#showday {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
 
+#contact-message {
+  font-style: italic;
+  text-align: center;
+
+}
+
+.highlight-book-blue {
+  background-color: rgba(0, 140, 255, 0.212);
+}
+
+.regularitalic {
+  padding: 0px;
+  margin: 0px;
+  font-style: italic;
+  
+  
+
+}
 /* ------------------------------------------------------------------------- */
 
 .cases-image {
@@ -1977,6 +2030,24 @@ form {
 .row-1 {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+.goal {
+  margin-top: 0px !important;
+}
+
+
+
+.cases {
+  margin-top: 4vh;
+  margin-bottom: 10vh;
+ 
+  flex-direction: column;
+  
+}
+
+#index-page .cases {
+  gap: 50px;
 }
 
 
@@ -1991,8 +2062,24 @@ form {
   
 }
 
+#heros {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.cases {
+  margin-top: 0px;
+}
+
+
+
+.case-image {
+  margin-bottom: 20px !important;
+}
+
 .cropped2 {
-  width: 400px; /* width of container */
+  width: 300px; /* width of container */
   height: 250px; /* height of container */
   object-fit: cover;
   object-position: -50px -40px; /* try 20px 10px */ 
@@ -2016,7 +2103,7 @@ form {
 }
 
 .main_message_content {
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
   margin-top: 4px;
 }
 
@@ -2051,6 +2138,7 @@ form {
 
 .cases .column img {
   margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .button-main-page a {
@@ -2155,6 +2243,10 @@ form {
 @media only screen and (min-width: 768px) {
   .h1 {
     font-size: 55px;
+  }
+
+  #index-page .cases {
+    gap: 80px;
   }
 
   .h2 {

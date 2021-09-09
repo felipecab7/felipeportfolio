@@ -128,6 +128,8 @@
 
   --buttons: #5e5e5e;
 
+  --modernblack: #252525;
+
   --color-secondary-900: #00696a;
   --color-secondary-800: #008c96;
   --color-secondary-700: #00a1af;
@@ -151,10 +153,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   
   
 
 }
+
+#heroimage1 {
+  width: 800px !important;
+  overflow: hidden !important;
+  height: 490px;
+
+}
+
+
+#heroimage2 {
+  width: 600px !important;
+
+}
+
+
+#heroimage3 {
+  width: 600px !important;
+
+}
+
+
 
 .fa-arrow-right {
   width: 12px;
@@ -204,8 +232,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family:  "silkamedium", "silka", sans-serif;
-  background: var(--color-gray200);
+  background: var(--modernblack);
   letter-spacing: -.5px;
+  color: white !important;
  
 }
 
@@ -223,6 +252,7 @@ section {
 
 a {
   text-decoration: none;
+  
 }
 
 h1 {
@@ -276,9 +306,10 @@ p {
   color: var(--buttons);
   margin: 0 0 1rem;
   line-height: 1.8rem;
+  color: white;
 }
 
-b { color: #000000;
+b { color: white;
  
 }
 
@@ -321,6 +352,7 @@ b { color: #000000;
     font-family: "silkasemibold";
     text-align: left;
     letter-spacing: -3px;
+    color: white;
 }
 
 
@@ -339,6 +371,7 @@ b { color: #000000;
     font-family: "silkasemibold";
     text-align: left;
     letter-spacing: -4px;
+    color: white;
 }
 
 .h3 {
@@ -353,6 +386,7 @@ b { color: #000000;
   line-height: 1;
   font-weight: 600;
   font-family: "silkasemibold";
+  color: white;
 }
 
 .light {
@@ -362,6 +396,7 @@ b { color: #000000;
 .f-22 {
   font-size: 30px !important;
   margin: 0px !important;
+  color: white;
 }
 
 .pb-1 {
@@ -402,6 +437,7 @@ b { color: #000000;
   font-family: "silkabold";
   letter-spacing: -.030em;
   font-size: 72px;
+  color: white;
    
 }
 
@@ -426,9 +462,9 @@ b { color: #000000;
   -webkit-align-self: baseline;
   -ms-flex-item-align: baseline;
   align-self: baseline;
-  color: rgb(27, 27, 27);
+  color: rgb(255, 255, 255);
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.6;
   font-weight: 600;
   font-family: "silkasemibold";
 }
@@ -449,7 +485,7 @@ b { color: #000000;
   line-height: 1.3;
   font-weight: 400;
   font-family: "silkamedium";
-  color:#666666;
+  color:#ffffff;
   letter-spacing: -1px;
 }
 
@@ -477,7 +513,7 @@ b { color: #000000;
   line-height: 1.2;
   font-weight: 400;
   font-family: "silkamedium";
-  color: rgb(112, 112, 112);
+  color: rgb(224, 224, 224);
 }
 
 .displayflex {
@@ -553,7 +589,7 @@ b { color: #000000;
 /* The footer is fixed to the bottom of the page */
 
 .background-header {
-  background-color: var(--color-gray200);
+  background-color: var(--modernblack);
   width: 100%;
   display: flex;
 }
@@ -610,8 +646,8 @@ b { color: #000000;
 .logo a {
   font-family: "silkabold", sans-serif !important;
   font-size: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0) !important;
+  background-color: var(--modernblack);
+  color: rgb(255, 255, 255) !important;
   padding: 4px;
   
 }
@@ -741,7 +777,7 @@ b { color: #000000;
   
   letter-spacing:  -1.5px;
   line-height: 36px;
-  color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
 
 }
 
@@ -867,9 +903,11 @@ b { color: #000000;
 
 }
 
+
+
 .highlight-blue {
 
-  color: rgb(17, 143, 165);
+  color: rgb(0, 217, 255);
   
 }
 
@@ -879,14 +917,14 @@ b { color: #000000;
 
 .highlight-black {
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   
 }
 
 .highlight-purple {
 
-  color: rgb(143, 0, 187);
+  color: rgb(185, 0, 241);
   
 }
 
@@ -919,6 +957,13 @@ b { color: #000000;
   letter-spacing: -.9px;
   line-height: 50px;
   color: rgb(41, 41, 41);
+}
+
+.greybubble {
+  background-color: rgb(54, 54, 54);
+  padding: 20px;
+  border-radius: 20px;
+
 }
 
 .text_left {
@@ -959,7 +1004,7 @@ ol, ul, li {
 
 
 .nav-list {
-  background: var(--color-gray200);
+  background: var(--modernblack);
   margin: 0;
   display: flex;
   justify-content: flex-end;
@@ -970,12 +1015,16 @@ ol, ul, li {
   
 }
 
+.modernblack {
+  color: var(--modernblack);
+}
+
 .nav-list:nth-child(-1) {
   margin-right: 0px !important;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1090,7 +1139,7 @@ a {
   font-size: 14px;
   font-weight: 200;
   font-family: "silkalight";
-  color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
  
 
 }
@@ -1322,7 +1371,7 @@ figure img {
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  background-color: var(--color-gray200);
+  background-color: var(--modernblack);
 
   
   height: 100%;
@@ -1331,7 +1380,7 @@ figure img {
 
 
 .main_container {
-  background-color: var(--color-gray200);
+  background-color: var(--modernblack);
   display: flex;
   flex-direction: column;
   line-height: 1px;
@@ -1421,7 +1470,7 @@ figure img {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  background-color: var(--color-gray200);
+  background-color: var(--modernblack);
 }
 
 .button-footer {
@@ -1441,10 +1490,19 @@ figure img {
  
 }
 
+.mlr-1 {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.white-background {
+  color: white;
+}
 
 
 .button-main-page a {
-  color: var(--buttons);
+  color: white;
   font-size: 20px;
   font-weight: 600;
 
@@ -1491,6 +1549,11 @@ figure img {
 
 }
 
+.amplificar {
+  width: calc(100%) !important;
+ 
+}
+
 .container_text .h3 {
   margin-bottom: 30px;
 }
@@ -1498,6 +1561,7 @@ figure img {
 .row img{
   object-fit: cover;
   max-width: 100%;
+  
   border-radius: 10px;
 }
 
@@ -1548,7 +1612,7 @@ i {
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  background: var(--color-gray200);
+  background: var(--modernblack);
   border-radius: var(--radius);
   
   min-width: auto;
@@ -2141,7 +2205,7 @@ form {
 }
 
 .cases .p2 {
-  color: var(--buttons);
+  color:#ffffff;
 }
 
 
@@ -2279,6 +2343,13 @@ form {
 
     
   
+}
+
+#heroimage1 {
+  width: auto !important;
+  overflow: hidden !important;
+  height: auto;
+
 }
 
 #heros {

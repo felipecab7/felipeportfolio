@@ -166,7 +166,7 @@
 #heroimage1 {
   width: 800px !important;
   overflow: hidden !important;
-  height: 490px;
+  height: 370px;
 
 }
 
@@ -333,8 +333,9 @@ b { color: white;
 
 .underlinelanding {
   height: 4px;
-  width: 120px; 
-  
+  width: 120px;
+  position: absolute; 
+  top: 100px;
   background-image: linear-gradient(225deg, #E241FC 36.04%, #5900B2 88.83%, #0044ff 220.3%);
 }
 
@@ -624,7 +625,7 @@ b { color: white;
 }
 
 .header {
-  padding: 40px 0;
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
 }
@@ -2201,7 +2202,8 @@ form {
 
 .cases .h3 {
   font-size: 40px;
-  margin: 20px 0 30px;
+  margin-bottom: 20px;
+ 
 }
 
 .cases .p2 {
@@ -2345,11 +2347,33 @@ form {
   
 }
 
+.header {
+  padding: 15px 0;
+
+}
+
+#hero-subhead {
+  width: 90vw;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 #heroimage1 {
   width: auto !important;
   overflow: hidden !important;
   height: auto;
+ 
 
+
+
+}
+
+#heroimage3 {
+  width: 1000px;
+}
+
+.box-scroll {
+  height: 80px;
 }
 
 #heros {
@@ -2460,24 +2484,26 @@ form {
 
 
 .cases .p2 {
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
+
+.
 
 .social-list {
   justify-content: space-between;
   margin-top: 40px;
 }
 
-
-
-.cases .row:nth-child(2n) {
-  flex-direction: column-reverse;
-
+.underlinelanding {
+  top: 70px;
+  width: 80px;
 }
+
+
 
 .cases .column {
   width: 100%;
@@ -2498,7 +2524,9 @@ form {
 
 .cases .h3 {
   margin: 10px 0 15px;
-  font-size: 24px;
+  font-size: 40px;
+  line-height: 45px;
+  
 }
 
 .h3 {
@@ -2637,6 +2665,10 @@ form {
   }
 
 
+  .cases .row:nth-child(2n) {
+    flex-direction: column-reverse !important;
+  
+  }
   
 
   /* no top bar for big 1440 */

@@ -25,9 +25,17 @@
 
     <title>Matterhorn Case</title>
     <script src="https://kit.fontawesome.com/bc912d6cbb.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+
+    <div id = "progressbar"></div>
+    <div id = "scrollpath"></div>
+    <div id = "percentage"></div>
+
+
+
     <div class="container-principal">
         <header class="header">
             <div class="background-header">
@@ -45,36 +53,7 @@
                 </ul>
             </div>
 
-            <!-- <div class="navbar_toggle" id="mobile_menu">
-                    <span class="bar"></span><span class="bar"></span>
-                    <span class="bar"></span>
-                </div> -->
-
-            <!-- <div class = "sidenav">
-                <ul class="navbar_menu">
-    
-                    <li class="navbar_menu_item" >
-                        <a href="index.html" class = "navbar_menu_item_link"  style = "background: #000000 ; color:white; text-decoration: line-through" >HOME</a>
-                    </li>
-    
-                    <li class="navbar_menu_item">
-                        <a href="about.html" class = "navbar_menu_item_link">MY STORY</a>
-                    </li>
-            
-                    <li class="navbar_menu_item" >
-                        <a href="experiments.html" class = "navbar_menu_item_link">IDEAS</a>
-                    </li>
-    
-                    <li class="navbar_menu_item" >
-                        <a href="notes.html" class = "navbar_menu_item_link">NOTES</a>
-                    </li>
-            
-                    <li class="navbar_menu_item">
-                        <a href="contact.html" class = "navbar_menu_item_link">CONTACT</a>
-                    </li>
-    
-                </ul>
-            </div>   -->
+        
         </header>
 
         <!-- hero section landing page-->
@@ -296,51 +275,59 @@
 
                 </div>
 
+                <div class="row-1 flex-start">
+                    
+                    <div class="h2 pb-2  ">Testing iterations
+                    </div>
+                    <div class="h3 f-22 pb-2 ">Sign-up flow</div>
+                </div>
 
-              
 
 
-                <div class="row">
+                
+
+                <div class="row align-items-iteration">
                     <div class="column iteration-image iteration-2">
-                      <img src="css/imgs/matterhorn/iterations/macbook1.png" alt="" />
+                      <img src="css/imgs/final/oldsite.png" alt="" />
                     </div>
                    
                     <div class="column ">
-                      <div class = "h4 bold">Iteration 01</div>
-                      <br>
+                        <div class="slider-container">
+                            <div class="slider-box">
+                                <div class = "p2 ">Avg task success
+
+                                </div>
+                                <div class="slider">
+
+                                </div>
+
+                            </div>
+                           
+                            <div class = "h3  pb-2 ">50%</div>
+
+
+                        </div>
                     
-                      <div class = "h3 f-22 pb-2">Dashboard design</div>
-
-                      
-                      <div class="p2 ">Implemented a progress bar so that users would more strongly understand exactly where they were in the mediation process as well as a “Status” and “History” information in the left sidebar so that the user is not forced to toggle back and forth. 
-                    </div>
-
-                      
-                      
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="column iteration-image iteration-2">
-                      <img src="css/imgs/matterhorn/iterations/macbook2.png" alt="" />
-                    </div>
+                        
+                    
                    
-                    <div class="column ">
-                      <div class = "h4 bold">Iteration 02</div>
-                      <br>
-                    
-                      <div class = "h3 f-22 pb-2">Made progress bar smaller</div>
+                      <div class = "h3 f-22 pb-2">Old Interface</div>
 
+                
                       
-                      <div class="p2 ">We reduced the size of the progress bar and navigation to ensure this the chat box stays above the fold since messages on the platform tend to be long and more formal than other chat platforms. 
-
+                      <div class="p2 ">No interpreter assistance during registration, users had a hard time reading legal text.
+                     </div>
+                  
                     </div>
 
+               
+
                       
                       
-                    </div>
+                  
                   </div>
 
+                 
                   <div class="row">
                     <div class="column iteration-image">
                       <img src="css/imgs/matterhorn/iterations/macbook3.png" alt="" />
@@ -641,6 +628,19 @@
             </div>
 
         </footer>
+
+        <script type="text/javascript">
+
+            var progressbar = document.getElementById("progressbar")
+            var percentage = document.getElementById("percentage")
+    
+            var totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                var progress = (window.pageYOffset / totalHeight) * 100;
+                progressbar.style.height = progress + "%";
+            }
+    
+        </script>
 
         <script src="app.js"></script>
 </body>

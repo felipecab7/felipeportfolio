@@ -128,7 +128,7 @@
 
   --buttons: #5e5e5e;
 
-  --modernblack: #252525;
+  --modernblack:#15161A;
 
   --color-secondary-900: #00696a;
   --color-secondary-800: #008c96;
@@ -664,7 +664,7 @@ b { color: white;
 }
 
 .logosize {
-  width: 30px;
+  width: 22px;
 }
 
 .header .nav {
@@ -2305,6 +2305,11 @@ form {
   background-color:  #1b1b1b;
 }
 
+.name {
+  color: white !important;
+  margin-bottom: 10px;
+}
+
 .cases-margin {
   margin-top: 70px !important;
   margin-bottom: 70px !important;
@@ -2439,8 +2444,9 @@ form {
 
 #hero-subhead {
   width: 90vw;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 30px;
+  text-align: left;
 }
 
 #heroimage1 {
@@ -2458,7 +2464,14 @@ form {
 }
 
 .box-scroll {
-  height: 100px;
+  height: 140px;
+}
+
+.box-scroll > .h2 {
+
+  text-align: left;
+  margin-top: 4px;
+
 }
 
 #heros {

@@ -684,9 +684,10 @@ b { color: white;
 }
 
 .box-scroll {
-  height: 120px;
+  height: 200px;
   overflow: hidden;
   position: relative;
+  
 }
 
 .button-box {
@@ -799,13 +800,13 @@ b { color: white;
 }
 
 #hero-subhead {
-  font-size: 32px;
-  width: 680px;
+  font-size: 24px;
+  width: 800px;
   text-align: center;
   
-  letter-spacing:  -1.5px;
+  letter-spacing: .009em;
   line-height: 36px;
-  color: rgb(255, 255, 255);
+  color: rgb(206, 206, 206);
 
 }
 
@@ -2457,7 +2458,7 @@ form {
 }
 
 .box-scroll {
-  height: 80px;
+  height: 100px;
 }
 
 #heros {

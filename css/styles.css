@@ -646,6 +646,31 @@ b {
   display: flex;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .box-scroll::before {
   top: 0;
   left: 0;
@@ -720,7 +745,7 @@ b {
 }
 
 #landingmainmessage {
-  height: 80vh;
+  height: 100vh;
   align-items: center;
   padding: 0px !important;
 
@@ -1130,26 +1155,15 @@ figure img {
   background: rgba(red, green, blue, alpha);
 }
 
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 4px;
-  height: 50%;
+.progressbar {
   background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: animate 5s linear infinite;
-}
-
-#progressbar:before,
-#progressbar:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  filter: blur(1px);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  min-width: 200px;
+  background-size: 100%;
+  animation: animate 15s linear infinite;
 }
 
 #progressbar:after {
@@ -1180,6 +1194,12 @@ figure img {
 
 .supersickcolor {
   background: linear-gradient(to top, #008aff, #00ffe7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  min-width: 200px;
+  background-size: 100%;
 }
 
 .highlight-good {
@@ -1994,7 +2014,9 @@ i {
 }
 
 #contactbutton {
-  background-image: linear-gradient(225deg, #750085 36.04%, #5900b2 88.83%);
+  background: rgb(39, 39, 39);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; creates a mask*/
 
   padding-left: 20px;
   padding-right: 20px;
@@ -2127,6 +2149,11 @@ form {
 
 .flexspacearound {
   justify-content: flex-start !important;
+}
+
+.fa-chevron-down {
+  margin-top: 200px;
+  text-align: center;
 }
 
 .main_message_content h5 {
@@ -2296,6 +2323,15 @@ form {
 @media screen and (max-width: 600px) {
   .footer-company-about {
     padding-bottom: 25px;
+  }
+
+  #landingmainmessage {
+    height: 80vh;
+  }
+
+  .fa-chevron-down {
+    margin-top: 5px;
+    text-align: center;
   }
 
   .interfacetitle {

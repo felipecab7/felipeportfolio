@@ -42,15 +42,16 @@
     <header class="header">
       <div class="background-header">
         <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
-        <img class = "logosize"src="/css/imgs/SVG/Asset 5.svg" alt="">
+        <a href="index.html"><img class = "logosize "src="/css/imgs/SVG/Asset 5.svg" alt=""></a>
+        
 
         <ul class="nav-list text-right">
           <li class="nav-item">
-            <a href="index.html">Work</a>
+            <a  class = "hover-underline-animation"  href="index.html">Work</a>
           </li>
 
           <li class="nav-item">
-            <a href="aboutpage.html">About</a>
+            <a class = "hover-underline-animation"  href="aboutpage.html">About</a>
           </li>
         </ul>
       </div>
@@ -93,16 +94,18 @@
       <div class="main_message" tabindex="0">
         <div id="landingmainmessage" class="main_message_content " id="purpose">
 
-
+          
           <div class="hero-subtitle">
 
-            <div id="hero-subhead" class=" name h2 text-center">
-              Hey, I am Felipe
-            
+            <div id="hero-subhead" class="h2 text-center">
+             I am Felipe Cabrera.
             </div>
 
 
           </div>
+
+
+         
 
 
 
@@ -111,7 +114,7 @@
 
             
 
-            <div class="h2 hero-landing text-center"> I strive to inspire <br> people through storytelling. </div>
+            <div class="h2 hero-landing text-center"> I strive to <span class = "progressbar"> inspire </span> <br> people through storytelling. </div>
 <!-- 
             <div class="underlinelanding"></div> -->
 
@@ -129,17 +132,19 @@
 
           </div>
 
-
-
-
+       
 
 
           <br>
 
+          
+
+        
+
           <div class="hero-subtitle">
 
             <div id="hero-subhead" class="h2 text-center">
-             As a graduate of UMSI’s Bachelor of Science in Information program, I have integrated my training in user-centered design, academic research, storytelling and entrepreneurship into <u>creating life-changing products.</u> 
+             As a graduate of UMSI’s Bachelor of Science in Information program, I have integrated my training in user-centered design, academic research, storytelling and entrepreneurship into creating life-changing products.
             </div>
 
 
@@ -158,7 +163,7 @@
               </button>
              
             </div>
-  -->
+  -->   <i class="fas fa-chevron-down"></i>
 
 
         </div>
@@ -168,9 +173,11 @@
 
         
 
-
+        
 
       </div>
+
+      
 
       
 
@@ -178,6 +185,8 @@
       <!-- Cases section -->
 
       <div id="index-page" class="cases ">
+
+        <a href="matterhornfinalcase.html"></a>
 
 
         <div class="row cases-margin ">
@@ -198,7 +207,7 @@
               <button href="matterhorn.html" class="button-main-page">
 
 
-                <a href="matterhornfinalcase.html">Open Project</a>
+                <a class = "hover-underline-animation" href="matterhornfinalcase.html">Open Project</a>
                 <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
               </button>
             </div>
@@ -226,7 +235,7 @@
               <button  class="button-main-page">
 
 
-                <a href="chichisfinalcase.html">Open Project</a>
+                <a class = "hover-underline-animation"  href="chichisfinalcase.html">Open Project</a>
                 <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
               </button>
             </div>
@@ -259,7 +268,7 @@
               <button  class="button-main-page">
 
 
-                <a href="sumifinalcase.html">Open Project</a>
+                <a  class = "hover-underline-animation"  href="sumifinalcase.html">Open Project</a>
                 <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
               </button>
             </div>
@@ -306,8 +315,7 @@
           <ul class="social-list">
             <li><a href="https://www.linkedin.com/in/felipe-cabrera-553724126/"><i class="fab fa-linkedin-in"></i></a>
             </li>
-            <li><a href="https://www.instagram.com/felipecab7"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
+            
 
             <li><a href="https://twitter.com/felipecab"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           </ul>
@@ -326,6 +334,20 @@
       </div>
 
     </footer>
+
+    
+        <script type="text/javascript">
+
+            var progressbar = document.getElementById("progressbar")
+            var percentage = document.getElementById("percentage")
+    
+            var totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                var progress = (window.pageYOffset / totalHeight) * 100;
+                progressbar.style.height = progress + "%";
+            }
+    
+        </script>
 
     <script src="app.js"></script>
 </body>

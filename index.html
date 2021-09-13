@@ -2,219 +2,354 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/html5reset.css" />
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYQXBD3HR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="css/imgs/favicon.png">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-        gtag('config', 'G-2ZYQXBD3HR');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <title>Home</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYQXBD3HR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2ZYQXBD3HR");
+  </script>
+
+  <script src="typed.js"></script>
+
+  <script>
+    var typed = new Typed('.animate', {
+      strings: ["First sentence.", "Second sentence."],
+      typeSpeed: 30
+    });
+  </script>
+
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/bc912d6cbb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <!-- Navegation -->
-
-    <header>
-
+  <div class="container-principal">
+    <header class="header">
+      <div class="background-header">
         <a id="skip" alt="skip to content" href="#main-content">Skip to Content</a>
+        <a href="index.html"><img class = "logosize "src="/css/imgs/SVG/Asset 5.svg" alt=""></a>
+        
 
-        <navbar>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="" id="logo">FELIPE CABRERA</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html">Home</a>
-                </li>
+        <ul class="nav-list text-right">
+          <li class="nav-item">
+            <a  class = "hover-underline-animation"  href="index.html">Work</a>
+          </li>
+
+          <li class="nav-item">
+            <a class = "hover-underline-animation"  href="aboutpage.html">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="navbar_toggle" id="mobile_menu">
+                    <span class="bar"></span><span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
+
+      <!-- <div class = "sidenav">
+                <ul class="navbar_menu">
+    
+                    <li class="navbar_menu_item" >
+                        <a href="index.html" class = "navbar_menu_item_link"  style = "background: #000000 ; color:white; text-decoration: line-through" >HOME</a>
+                    </li>
+    
+                    <li class="navbar_menu_item">
+                        <a href="about.html" class = "navbar_menu_item_link">MY STORY</a>
+                    </li>
             
-                <li class="nav-item">
-                    <a href="contact.html">Contact</butt>
-                </li>
-                <li class="nav-item">
-                    <a href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"></a>
-                </li>
-            </ul>
-
-
-
-            <!-- <div class="navbar_toggle" id="mobile_menu">
-                <span class="bar"></span><span class="bar"></span>
-                <span class="bar"></span>
-            </div> -->
-
-
-
-
-
-
-
-            <!-- <div class = "sidenav">
-            <ul class="navbar_menu">
-
-                <li class="navbar_menu_item" >
-                    <a href="index.html" class = "navbar_menu_item_link"  style = "background: #000000 ; color:white; text-decoration: line-through" >HOME</a>
-                </li>
-
-                <li class="navbar_menu_item">
-                    <a href="about.html" class = "navbar_menu_item_link">MY STORY</a>
-                </li>
-        
-                <li class="navbar_menu_item" >
-                    <a href="experiments.html" class = "navbar_menu_item_link">IDEAS</a>
-                </li>
-
-                <li class="navbar_menu_item" >
-                    <a href="notes.html" class = "navbar_menu_item_link">NOTES</a>
-                </li>
-        
-                <li class="navbar_menu_item">
-                    <a href="contact.html" class = "navbar_menu_item_link">CONTACT</a>
-                </li>
-
-            </ul>
-        </div>   -->
-
-
-
+                    <li class="navbar_menu_item" >
+                        <a href="experiments.html" class = "navbar_menu_item_link">IDEAS</a>
+                    </li>
+    
+                    <li class="navbar_menu_item" >
+                        <a href="notes.html" class = "navbar_menu_item_link">NOTES</a>
+                    </li>
+            
+                    <li class="navbar_menu_item">
+                        <a href="contact.html" class = "navbar_menu_item_link">CONTACT</a>
+                    </li>
+    
+                </ul>
+            </div>   -->
     </header>
 
     <!-- hero section landing page-->
 
     <main id="main-content">
-        <div class="main_message" tabindex=0>
-            <div class="main_message_content" id="purpose">
-                <h5 class="title">Great stories are about transformation.</h5>
-                <br>
-                <h5 class="title">The deeper we dig into stories to find the struggling moment,</h5>
-                <br>
-                <h5 class="title">the greater the likelihood a person’s journey will be</h5>
+      <div class="main_message" tabindex="0">
+        <div id="landingmainmessage" class="main_message_content " id="purpose">
 
-                <br>
-                <h5 class="title"> <span style="color: #000000">Memorable</span></h5>
+          
+          <div class="hero-subtitle">
 
-
-
-            </div>
-
-        </div>
-
-        <!-- Cases section -->
-
-
-
-        <div class="main_container">
-            <a href="umsi.html">
-                <div class="main_container-card">
-                    <div class="main_container_content">
-
-                        <div class="main_container_content_image">
-                            <img src="css/imgs/case1/solution5.png" alt="">
-                        </div>
-
-                        <div class="main_container_content_text">
-                            <h1>UMSI</h1>
-                            <p>Improving the
-                                learnability, efficiency, memorability of the UMSI site.</p>
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </a>
-
-
-
-
-
-
-
-
-            <div class="main_container-card">
-                <a href="matterhorn.html">
-                    <div class="main_container_content" href="umsi.html">
-
-                        <div class="main_container_content_image">
-                            <img src="css/imgs/court.png" alt="">
-                        </div>
-
-                        <div class="main_container_content_text">
-                            <h1>Matterhorn</h1>
-                            <p>Ensuring the ASL community has the same access to justice. </p>
-
-
-
-                        </div>
-
-
-                    </div>
-                </a>
-            </div>
-
-            <div class="main_container-card">
-                <a href="chichis.html">
-                <div class="main_container_content">
-
-                    <div class="main_container_content_image">
-                        <img src="css/imgs/chichis.png" alt="">
-                    </div>
-
-                    <div class="main_container_content_text">
-                        <h1>Chichi's</h1>
-                        <p>A food delivery application built from the ground up using Django and React.</p>
-
-
-
-                    </div>
-
-
-                </div>
-                </a>
+            <div id="hero-subhead" class="h2 text-center margin10 ">
+             I am Felipe Cabrera.
             </div>
 
 
-        </div>
-    </main>
+          </div>
 
-    <footer>
-        <div class = "footer_container">
-            <div class ="footer_container_items">
+
+         
+
+
+
+          <div class="box-scroll">
+
+
+            
+
+            <div class="h2 hero-landing text-center"> I strive to <span class = "progressbar"> inspire </span> <br> others through storytelling. </div>
+<!-- 
+            <div class="underlinelanding"></div> -->
+
+
+
+            <!-- <div class = "hero-title">
+                <div class="h0 text-center  gradient">
+  
+                  UX Designer.
+                 </div>
+                 
                 
-                <div class = "footer_info">
-                    <p>Made by Felipe Cabrera © 2021</p>
-                    <p>Graduate of UX Design from the University of Michigan School of Information.</p>
+              </div> -->
+
+
+          </div>
+
+       
+
+
+          <br>
+
+          
+
         
-                    <p>dcabrera@umich.edu</p>
-    
-                </div>
-              
+
+          <div class="hero-subtitle">
+
+            <div id="hero-subhead" class="h2 text-center">
+             As a graduate of UMSI’s Bachelor of Science in Information program, I have integrated my training in user-centered design, academic research, storytelling and entrepreneurship into creating life-changing products.
             </div>
-        </div>    
-    
+
+
+          </div>
+
+          
+
+
+
+          <!-- 
+             <div class="nice-link ">
+              <button href="aboutpage.html" class="button-main-page">
+                <i class="fas fa-arrow-right"></i>
+  
+                <a href="aboutpage.html">Learn More </a>
+              </button>
+             
+            </div>
+  -->   <i class="fas fa-chevron-down"></i>
+
+
+        </div>
+
+
+
+
+        
+
+        
+
+      </div>
+
+      
+
+      
+
+
+      <!-- Cases section -->
+
+      <div id="index-page" class="cases ">
+
+        <a href="matterhornfinalcase.html"></a>
+
+
+        <div class="row cases-margin ">
+          <div class="column text-right  ">
+            <img id="heroimage1" class="case-image" src="css/imgs/landing/matterhorn/matterhorn2drender.png" alt="" />
+          </div>
+
+
+          <div class="column flex-end">
+
+            <div class="h3">Redesigning Matterhorn.</div>
+
+            <div class="p2">Redesigned Matterhorn’s online dispute resolution platform to accommodate the needs of the
+              American Sign Language community.</div>
+
+
+            <div class="button-box pt-2">
+              <button href="matterhorn.html" class="button-main-page">
+
+
+                <a class = "hover-underline-animation" href="matterhornfinalcase.html">Open Project</a>
+                <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
+              </button>
+            </div>
+          </div>
+         
+        </div>
+
+        <br>
+
+
+        <div class="row cases-margin ">
+          <div class="column text-right ">
+            <img id="heroimage2" src="css/imgs/landing/chichis/finalrenderblack.png" alt="" />
+          </div>
+       
+
+          <div class="column flex-end">
+
+            <div class="h3">Creating a Full Stack web app.</div>
+
+            <div class="p2 ">Designed, developed, and launched a full-stack food delivery application.</div>
+
+
+            <div class="button-box pt-2">
+              <button  class="button-main-page">
+
+
+                <a class = "hover-underline-animation"  href="chichisfinalcase.html">Open Project</a>
+                <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
+              </button>
+            </div>
+          </div>
+
+         
+
+
+        </div>
+
+        <br>
+
+
+
+        <div class="row cases-margin ">
+          <div class="column text-right">
+            <img id="heroimage3" src="css/imgs/landing/sumi/phone.png" alt="" />
+          </div>
+
+
+          <div class="column flex-end">
+
+            <div class="h3">Designing a habit tracker.</div>
+
+            <div class="p2 ">The Sumi prototype was the culmination of a semester-long project for SI 482 - Interaction
+              Design Studio at the University of Michigan.</div>
+
+
+            <div class="button-box pt-2">
+              <button  class="button-main-page">
+
+
+                <a  class = "hover-underline-animation"  href="sumifinalcase.html">Open Project</a>
+                <i class="fas fa-long-arrow-alt-right mlr-1 white-background"></i>
+              </button>
+            </div>
+          </div>
+         
+        </div>
+
+
+
+
+
+
+        <!-- <div class="row">
+            <img src="css/imgs/chichis/chichis-real-black.jpg" alt="" />
+            <div class="container_text">
+              <div class="h3">
+                Full stack food delivery web app for 300 users
+              </div>
+              <button href="about.html" class="button-main-page">
+                <i class="fas fa-arrow-right"></i>
+                <a href="about.html">Learn More</a>
+              </button>
+            </div>
+          </div> -->
+      </div>
+
+    </main>
+    <!-- Navegation -->
+
+    <footer class="new-footer">
+
+      <div class="footer-l">
+
+
+        <p class="footer-company-about">
+          © 2021 - Designed & Coded by <b>Felipe Cabrera.</b>
+        </p>
+      </div>
+
+
+      <div class="footer-c">
+
+        <div class="social-footer-icons">
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/felipe-cabrera-553724126/"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            
+
+            <li><a href="https://twitter.com/felipecab"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+      <div class="footer-r">
+        <button  href="matterhorn.html" class="button-main-page">
+         
+          <a id = "contactbutton" href="mailto:dcabrera@umich.edu">Contact</a>
+        
+        </button>
+      </div>
+
     </footer>
 
-    <script src="app.js"></script>
+    
+        <script type="text/javascript">
 
+            var progressbar = document.getElementById("progressbar")
+            var percentage = document.getElementById("percentage")
+    
+            var totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                var progress = (window.pageYOffset / totalHeight) * 100;
+                progressbar.style.height = progress + "%";
+            }
+    
+        </script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

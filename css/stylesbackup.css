@@ -1,0 +1,2380 @@
+/*------------------------ FONTS ------------------------*/
+
+@font-face {
+  font-family: "silkablack";
+  src: url("Silka-Roman-Webfont/silka-black-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-black-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-black-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-black-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkabold";
+  src: url("Silka-Roman-Webfont/silka-bold-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-bold-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-bold-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkasemibold";
+  src: url("Silka-Roman-Webfont/silka-semibold-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-semibold-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-semibold-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkamedium";
+  src: url("Silka-Roman-Webfont/silka-medium-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-medium-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-medium-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-medium-webfont.ttf") format("truetype");
+  font-weight:normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkaregular";
+  src: url("Silka-Roman-Webfont/silka-regular-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-regular-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-regular-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "silkalight";
+  src: url("Silka-Roman-Webfont/silka-light-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-light-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-light-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "silkaextra_light";
+  src: url("Silka-Roman-Webfont/silka-extralight-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-extralight-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-extralight-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-extralight-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-extralight-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "silkathin";
+  src: url("Silka-Roman-Webfont/silka-thin-webfont.eot");
+  src: url("Silka-Roman-Webfont/silka-thin-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("Silka-Roman-Webfont/silka-thin-webfont.woff2") format("woff2"),
+    url("Silka-Roman-Webfont/silka-thin-webfont.woff") format("woff"),
+    url("Silka-Roman-Webfont/silka-thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "alpina";
+  src: url("alpina/GT-Sectra-Fine-Regular-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------ VARIABLES ------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+.skills-row {
+  display: flex;
+  flex-direction:row;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.software {
+  padding-top: 2px;
+}
+
+#correo {
+  color:rgb(33, 33, 189);
+}
+
+.skills-button {
+  padding: 10px;
+  border: 1px solid rgb(206, 206, 206) ;
+  font-size: 12px;
+  border-radius: 10px;
+  color: rgb(128, 128, 128);
+  width: 140px !important;
+  margin-right: 8px;
+  margin-bottom: 8px;
+ 
+  font-weight: 200;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+.background-header {
+  background-color: white;
+ 
+  width: 100%;
+  display: flex;
+
+
+}
+
+footer{
+
+	bottom: 0;
+}
+
+
+
+.header {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.invisible {
+  width: 1140px;
+}
+
+.logo {
+  flex: 1;
+  font-family: "silkasemibold", sans-serif !important;
+
+
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.logo a {
+  font-family: "silkasemibold", sans-serif !important;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+
+
+}
+
+.header .nav {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	
+}
+
+
+.container-principal {
+
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+}
+
+
+
+.super-container-wrap {
+  
+}
+
+
+.footer-distributed{
+ 
+	background-color: #252525;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+  padding: 50px 0px;
+	margin-top: 80px;
+
+}
+
+.brand-color-highlight a{
+  color: rgb(31, 55, 194) !important;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-left h5 {
+  margin: 0px !important;
+  text-align: left;
+  font-weight: 600 !important;
+  color: white;
+  
+  
+  
+}
+
+.footer-left h4 {
+  margin: 0px !important;
+  text-align: left;
+  font-weight: 600 !important;
+  color: white;
+  
+  
+}
+
+.footer-left p {
+  margin: 0px !important;
+  text-align: left;
+  font-weight: 600 !important;
+  padding-top: 4px;
+  color: white;
+  
+  
+}
+
+
+
+.footer-left h3 {
+  margin: 0px !important;
+  text-align: left;
+  font-weight: 600 !important;
+  font-family: inherit;
+  
+  
+}
+.footer-right h5 {
+  margin: 0px !important;
+  text-align: right;
+  font-weight: 600 !important;
+
+  
+  
+}
+
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+.h0 {
+  margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -0.05em;
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+    color: rgb(27, 27, 27);
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: "silkasemibold";
+    text-align: left;
+  
+
+}
+
+.h1 {
+  margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -0.05em;
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+    color: rgb(27, 27, 27);
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: "silkasemibold";
+    text-align: left;
+  
+
+}
+
+.p1 {
+  margin-bottom: 0px;
+  margin-left: -0.05em;
+  color: rgb(19, 19, 19);
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+ 
+  font-family: "silkamedium";
+  
+  
+  
+  color: black;
+}
+
+.p2 {
+  margin-bottom: 0px;
+  margin-left: -0.05em;
+  color: rgb(19, 19, 19);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+ 
+  font-family: "silkamedium";
+  
+  
+  
+  color: black;
+}
+
+
+.button-main-page i {
+  width: 30px;
+
+
+  font-size: 20px;
+  transition: all 0.4s ease;
+  transform: rotateZ(-45deg)
+}
+
+.button-main-page:hover i{
+  transform: rotateZ(0deg);
+  
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #080808;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media screen and (min-width: 1024px) {
+  
+    .background-header { 
+      width: 1024px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .background-header { 
+    width: 1440px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 880px) {
+
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+ 
+
+}
+
+
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid rgb(197, 197, 197);
+  border-radius: 50%;
+  cursor: none;
+  box-shadow: var(--nice-shadow);
+
+  /*Set the size of the magnifier glass:*/
+  width: 400px;
+  height: 400px;
+}
+
+
+:root {
+  /* primary color variables */
+
+  --color-primary-900: #00ad56;
+  --color-primary-800: #009c49;
+  --color-primary-700: #00ad56;
+  --color-primary-600: #00c164;
+  --color-primary-500: #00d26f;
+  --color-primary-200: #6aeeb5;
+  --nice-black: #252525;
+
+  /* secondary color variables */
+
+  --color-secondary-900: #00696a;
+  --color-secondary-800: #008c96;
+  --color-secondary-700: #00a1af;
+  --color-secondary-600: #00b6c9;
+  --color-secondary-500: #00c7dd;
+  --color-secondary-400: #00d0e1;
+  --color-secondary-300: #00d9e7;
+
+  --color-gray200: #ffffff;
+  --nice-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+
+  /* border radius */
+
+  --radius: 0.2rem;
+}
+
+/*  */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.desired-outcome {
+  color: #0f0f0f;
+  font-weight: 400;
+  
+  
+}
+
+.inprogress {
+  background-color: #C377E0;
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.story-container {
+  padding:15px;
+  text-align: center;
+}
+
+.job-story {
+  color: #791273;
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family:  "silkamedium", "silka", sans-serif;
+  background: var(--color-gray100);
+  letter-spacing: -.5px;
+}
+
+main {
+  flex: 1;
+}
+
+/* Jump to main content */
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  padding: 0 0 0rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-wrap {
+  width: 100%;
+  max-width: 760px;
+  
+  padding: 1rem 0 0rem;
+  position: relative;
+  text-align: left;
+  
+}
+
+.footerbutton {
+  padding: 14px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(182, 182, 182);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  width: 160px;
+  border-radius: 6px;
+
+
+}
+
+.next-after-buttons {
+  width: 100%;
+  height: 80px;
+  max-width: 760px;
+  display: flex;
+  padding: 1rem 0 1rem;
+  position: relative;
+  justify-content: space-between;
+
+
+}
+
+.hero-wrap h2{
+  text-align: left;
+  font-family: "silkasemibold";
+  font-size: 50px;
+  letter-spacing: -.9px;
+  line-height: 50px;
+  color: rgb(41, 41, 41);
+}
+
+.text_left {
+  text-align: left !important;
+  padding-top: 50px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  margin: 0px;
+}
+
+.text-holder {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page ol, .page ul {
+  padding: 0 0 0 2rem;
+}
+
+ol, ul, li {
+  line-height: 1.8rem;
+  margin: 0 0 0.5rem;
+
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
+
+.nav-list {
+  background: white;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  
+
+  
+}
+
+.nav-list:nth-child(-1) {
+  margin-right: 0px !important;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(97, 97, 97);
+  padding-bottom: 2px;
+  color: black !important;
+  
+}
+
+
+.nice-link {
+  
+  
+  display: flex;
+
+}
+
+
+
+.nice-grey-line {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  
+  color: rgb(211, 211, 211) !important;
+
+}
+
+
+
+
+
+
+
+.button-primary {
+  background-color: #6aebb5;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+#skip,
+#skip:hover,
+#skip:visited {
+  position: absolute;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#skip:active,
+#skip:focus {
+  z-index: 9999;
+  position: static;
+  width: auto;
+  height: auto;
+  color: black;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
+
+/*------------------------ HEADINGS AND PARAGRAPHS ------------------------*/
+
+h1 {
+  font-family: "silkamedium";
+  font-size: 63px;
+  color: black;
+}
+
+h2 {
+  font-family: "silkamedium";
+  font-size: 35px;
+  color: black;
+  margin: 1.25rem 0;
+  line-height: 1.6rem;
+  
+}
+
+h3 {
+  font-family: "silkamedium", sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  margin: 1.25rem 0;
+}
+
+h4 {
+  font-family: "silkamedium";
+  font-size: 20px;
+  color: black;
+  line-height: 1.6rem;
+  margin: 1.25rem 0;
+}
+
+h5 {
+  font-family: "silkalight";
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+}
+
+p {
+  font-family: "silkaregular";
+  font-weight: 200;
+  font-size: 16px;
+  color: rgb(97, 97, 97);
+  margin: 0 0 1rem;
+  line-height: 1.8rem;
+}
+
+b { color: #000000;
+ 
+}
+
+
+.page figure {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+  border-radius: 10px;
+ 
+}
+
+
+.legend {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "silkalight";
+  color: rgb(53, 53, 53);
+ 
+
+}
+
+figure {position: relative;}
+
+figure p {
+  padding-left: 4rem;
+  padding-right: 4rem
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.indented {
+  
+  padding:10px;
+
+}
+
+.note {
+  background-color: #f7f7f7;
+  padding: 20px;
+  padding-left:30px;
+  padding-right:30px;
+  border-radius: 25px;
+  margin-top:20px;
+}
+
+/*------------------------ BUTTONS and ICONS ------------------------*/
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  width: 50px;
+  background: var(--color-primary-200);
+}
+
+.button_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: none;
+  background-color: var(--color-primary-200);
+  width: 50px;
+}
+
+.button_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: none;
+  background-color: rgb(255, 225, 255);
+  width: 100%;
+}
+
+.button_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  background-color: rgb(204, 236, 255);
+  border-radius: 0rem;
+  width: 50px;
+}
+
+/* arrow icon */
+
+.arrow_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.arrow_icon img {
+  width: 35px;
+}
+
+/* mobile 375px */
+
+/*------------------------ NAVEGATION ------------------------*/
+
+.navbar {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+}
+
+.navbar_container {
+  background: white;
+  box-shadow: var(--nice-shadow);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Logo */
+
+
+/* Toggle icon and animation */
+
+.navbar_toggle .bar {
+  height: 2px;
+  margin: 5px;
+  transition: all 0.3 ease-in-out;
+  background: rgb(0, 0, 0);
+  padding-right: 1.6rem;
+}
+
+#mobile_menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+#mobile_menu.is-active .bar:nth-child(1) {
+  transform: translateY(330%) rotate(-45deg);
+}
+
+#mobile_menu.is-active .bar:nth-child(3) {
+  transform: translateY(-330%) rotate(-135deg);
+}
+
+/* side navegation  */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+  box-shadow: var(--nice-shadow);
+}
+
+.sidenav.active {
+  width: 280px;
+  z-index: -1000;
+}
+
+.navbar_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  padding-top: 50px;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  list-style-type: none;
+}
+
+.navbar_menu_item {
+  padding: 0.8rem;
+  width: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar_menu_item_link {
+  font-family: "silkasemibold";
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+/* navbar toggle */
+
+#mobile_menu {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  transform: translate(5%, 20%);
+}
+
+.navbar_toggle .bar {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+/*------------------------ FOOTER ------------------------*/
+
+.button {
+  padding: 15px;
+}
+
+/*------------------------ LANDING PAGE ------------------------*/
+
+.main {
+  background-color: white;
+}
+
+.main_message {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: white;
+
+  
+  height: 100%;
+}
+
+
+
+.main_container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  line-height: 1px;
+  
+}
+
+.main_container_uxm {
+  display:flex;
+  
+
+  
+
+
+
+}
+
+.four-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.personas-wrapper {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.persona {
+  padding: 20px;
+}
+
+.persona img{
+  width: 400px;
+  height: 480px;
+
+}
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #ffffff;
+  box-shadow: var(--nice-shadow);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left:20px;
+  border-radius: 30px;
+
+
+}
+
+.container-image {
+  width: 260px;
+
+
+  
+  
+}
+
+.container-image img {
+  width: 260px;
+  object-fit: cover;
+ 
+
+
+ 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.button-main-page {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+.button-footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(19, 19, 19);
+  width: 60%;
+  margin-top: 10px;
+ 
+}
+
+
+
+.button-main-page a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 900;
+
+  
+}
+
+.arrow-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+  width: 90%;
+  height: 90vh;
+
+  
+}
+
+
+.arrow-container img {
+  padding: 20px;
+
+  
+  transition: all 0.4s ease;
+}
+
+.arrow-container img:hover {
+  transform: rotateZ(-90deg);
+}
+
+
+
+.button-main-page img{
+  height: 15px;
+  padding-right: 10px;
+}
+
+
+
+
+.main_container > #uxmethods{
+
+
+}
+
+#uxmethods {
+  padding: 0px !important;
+  
+}
+
+#uxmethods > .main_container-card {
+  padding: 0px !important;
+ 
+
+}
+
+#main_img {
+  height: 100%;
+  width: 100%;
+}
+
+i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main_container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* landing page cards */
+
+.main_container-card {
+  display: flex;
+  align-items: left;
+  justify-content: flex-end;
+  
+  margin-bottom: 1.6rem;
+  
+}
+
+.main_container_content {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  border-radius: var(--radius);
+  
+  min-width: auto;
+  width: 100%;
+ 
+  border-radius: 4px;
+}
+
+/* card animation */
+
+
+
+.main_container_content_image img {
+  border-radius: 6px;
+}
+
+
+
+/* card animation */
+
+.main_container_content_image {
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  color: white;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.main_container_content_text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.main_container_content_image img {
+  background-color: white;
+  color: white;
+  width: 100%;
+
+  object-fit: fill;
+}
+
+.main_container_content_text h1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+  background: none;
+  margin: 8px;
+  margin-bottom:0px;
+  font-family: "silkamedium";
+
+  color: black;
+  line-height: 1.6rem;
+}
+
+.main_container_content p {
+  background: none;
+  margin: 10px;
+  
+  margin-top:0px;
+}
+
+/* skill container and buttons */
+
+.skills_container {
+  display: flex;
+
+  padding-top: 14px;
+  border-top: rgb(243, 243, 243) solid 0.1rem;
+}
+
+.year {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-family: "silkamedium";
+  width: 20%;
+  margin-right: 120px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 100%;
+}
+
+/* skill buttons */
+
+.skills p {
+  font-family: "silka";
+  font-size: 14px;
+  padding: 0px;
+  line-height: 12px;
+  color: rgb(0, 0, 0);
+}
+
+/*------------------------ ABOUT, EXPERIMENTS, NOTES PAGES------------------------*/
+/* SECTION 1 */
+
+.detail_view_card {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: top;
+  justify-self: center;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 2rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 2rem;
+  height: 90vh;
+}
+
+.detail_view_card_content {
+  height: 90vh;
+}
+
+.detail_view_card_text {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.main_card_image {
+  border-radius: var(--radius);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_card_image img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* SECTION 2 */
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.description_container_item img {
+  width: 100vw;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.description_container_item p:nth-child(2) {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* parallax image */
+
+.pimg1 {
+  background-image: url("imgs/michigan.jpg");
+  min-height: 200px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* fixed = parallax
+    scroll = normal
+  */
+
+  background-attachment: fixed;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ++++ ABOUT, EXPERIMENTS, NOTES NON-GENERIC STYLING ++++  */
+
+/* About page background color, page main title and subtitles */
+
+.detail_view_card_text h1 {
+  font-size: 63px;
+}
+
+#about {
+  background-color: #252525;
+}
+
+#about_text h1 {
+  color: rgb(255, 255, 255);
+}
+
+#about_text h2 {
+  font-family: "silkamedium";
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+#about_text p {
+  padding-top: 1.6rem;
+  color: white;
+}
+
+/* Experiments background color, page main title and subtitles */
+
+#experiments {
+  background-color: #76e7e0;
+}
+
+#experiments_text h1 {
+  padding-top: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+
+#experiments_text h2 {
+  font-family: "silkamedium";
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+#experiments_text p {
+  padding-top: 0.6rem;
+  color: rgb(0, 0, 0);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 300px;
+
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front img {
+  margin: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 40px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* flip card items alignment  */
+
+.phones_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  margin: 2rem;
+}
+
+/* Notes page background color, main title and subtitles */
+
+#notes {
+  background-color: #ffd000;
+}
+
+#notes_text h1 {
+  padding-top: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+
+#notes_text h2 {
+  font-family: "silkamedium";
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+/* Notes, books container */
+
+.books_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: #f0f4f5;
+}
+
+.books_container_title h2 {
+  font-size: 25px;
+}
+
+.books_container_cards {
+  padding-top: 30px;
+}
+
+.books_container_cards_item {
+  display: flex;
+  background-color: white;
+  box-shadow: var(--nice-shadow);
+  border-radius: 30px;
+  padding-left: 25px;
+  padding-right: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.books_container_cards_item_rating img {
+  width: 40%;
+  padding-bottom: 0.5rem;
+}
+
+.books_container_cards_item_image {
+  width: 900px;
+}
+
+.books_container_cards_item_image img {
+  width: 100%;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.books_container_cards_item_text {
+  padding-left: 1.6rem;
+}
+
+.books_container_cards_item_text_title p {
+  color: #000000;
+  font-family: "silkamedium";
+  font-size: 18px;
+}
+
+.books_container_cards_item_text_summary p {
+  color: #000000;
+  font-size: 14px;
+  line-height: none;
+}
+
+
+/* cases page */
+
+.section-1 {
+  padding: 50px;
+}
+
+.section-2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-item {
+  margin-top: 14px;
+
+
+}
+
+.section-item-image {
+  width: 100%;
+
+
+}
+
+.section-item-image img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+/*------------------------ CONTACT PAGE ------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: left;
+  justify-content: center;
+}
+
+/* Card with shadow different sizes */
+
+.shadow_card_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  
+  height: 380px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.form_fullname_container,
+.form_email_container,
+.form_message_container {
+  padding-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.form_fullname_container label,
+.form_email_container label,
+.form_message_container label {
+  padding-bottom: 0.6rem;
+}
+
+.form_fullname_container input,
+.form_email_container input {
+  height: 2rem;
+  border: none;
+  background-color: rgb(248, 248, 248);
+}
+
+.form_message_container textarea {
+  height: 4rem;
+  border: none;
+  background-color: rgb(248, 248, 248);
+}
+
+.form_button {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 1rem;
+}
+
+.form_button button {
+  width: 7rem;
+}
+
+/* important message container ----- USE WHEN WANTING TO SHOW AN IMPORTANT MESSAGE */
+
+.important_message_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(56, 56, 56);
+  padding: 1.6rem;
+}
+
+.important_message_container h3 {
+  font-family: "silkalight";
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration-line: overline;
+}
+
+
+/* _____________________________________________________________ */
+
+
+
+
+.main_message_content {
+   
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  
+}
+
+.main_message_content h5 {
+  text-align: left;
+  font-family: "silkasemibold";
+  font-size: 50px;
+  letter-spacing: -.9px;
+  line-height: 50px;
+  color: rgb(41, 41, 41);
+
+}
+
+#video {
+  border-radius: 30px;
+}
+
+.layouts__main___4TklR {
+  height: 300px !important;
+}
+
+
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) {
+  
+  .hero-wrap {
+    padding: 1rem 0 1rem
+  }
+
+
+
+
+  .button-footer {
+    margin-left:80px;
+    
+   
+  }
+
+
+
+  
+  .page figure {
+    width: 100%;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+ 
+  
+  }
+
+
+  
+
+  figure {position: relative;}
+
+  figure p {
+    padding-left: 4rem;
+    padding-right: 4rem
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 90px;
+    
+  
+    
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 50px;
+  
+  
+    
+  }
+
+  .section-2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+
+  
+
+
+  .button-primary {
+    background-color: #6aebb5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+
+
+  
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  
+
+  .main_message_content {
+   
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+   
+    
+  }
+
+  .main_message_content h5 {
+    text-align: left;
+    font-family: "silkasemibold";
+    font-size: 50px;
+    letter-spacing: -.9px;
+    line-height: 50px;
+    color: rgb(41, 41, 41);
+
+  }
+
+  .main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 2rem;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+   
+  }
+
+  .main_container-card {
+    height: 100%;
+    
+  }
+
+  .main_container_content {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100% !important;
+  }
+
+  /*------------------------ ABOUT, EXPERIMENTS, NOTES PAGES------------------------*/
+
+  .detail_view_card {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .detail_view_card_content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .detail_view_card_text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
+
+  /* bigger title tablet */
+
+  .detail_view_card_text h1 {
+    font-size: 110px;
+  }
+
+  .arrow_icon {
+    display: none;
+  }
+
+  .main_card_image {
+    padding-top: 0px;
+    margin-bottom: 4rem;
+    width: 60%;
+  }
+
+  /* SECTION 2 tablet new alignment*/
+
+  .description_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description_container_item {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+    margin-right: 3rem;
+  }
+
+  .pimg1 {
+    background-image: url("imgs/michigan.jpg");
+    min-height: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* fixed = parallax
+      scroll = normal
+    */
+
+    background-attachment: fixed;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* NOTES PAGE books container alignment */
+
+  .books_container_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .books_container_cards_item {
+    display: flex;
+    align-items: center;
+  }
+
+  .shadow_card_1 {
+    width: 400px;
+  }
+
+  .description_container_picture img {
+    width: 300px;
+  }
+
+  /* flip card items alignment  */
+
+  .phones_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 980px) {
+
+  .section-2 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 70px;
+  
+  
+    
+  }
+
+  .page figure {
+    width: calc(100% + 200px);
+    margin: 2.5rem 0 2.5rem -6.25rem !important;
+}
+
+  #main-photo-cases {
+    width: 100%;
+    margin: 0px !important;
+    margin-bottom: 30px !important;
+  }
+
+
+  
+
+
+  
+
+ 
+  
+
+  .button-primary {
+    background-color: #6aebb5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  .sidenav {
+    width: 280px;
+    left: 0;
+  }
+
+  .navbar_menu {
+    padding-right: 5rem;
+    align-items: flex-end;
+  }
+
+  
+
+  .detail_view_card {
+  }
+
+  .description_container {
+  }
+  .description_container_item {
+    display: block;
+    justify-content: space-between;
+    gap: 15px;
+    margin-left: 3rem;
+  }
+
+  .books_container {
+    padding-left: 18rem;
+  }
+
+  .books_container_title {
+    padding-left: 3rem;
+  }
+
+  .books_container_cards {
+    padding-left: 2rem;
+  }
+
+  /* landing page */
+
+  .main_message {
+  }
+
+  .main_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+
+@media screen and (min-width: 1440px) {
+
+  .section-2 {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .section-item-image img {
+    position: relative;
+    width: 122%;
+    border-radius: 10px;
+    right: 90px;
+  
+  
+    
+  }
+
+  .section-2 {
+    padding-left: 340px;
+    padding-right: 340px;
+  }
+
+
+  
+
+  /* no top bar for big 1440 */
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar_container {
+    margin: 0;
+    padding-left: 4rem;
+  }
+
+  .detail_view_card {
+    height: 100vh;
+  }
+
+  .detail_view_card_text h1 {
+    font-size: 150px;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  .sidenav {
+    width: 280px;
+    left: 0;
+  }
+
+  .navbar_menu {
+    padding-right: 3rem;
+    align-items: flex-end;
+  }
+
+  .detail_view_card {
+    padding-left: 18rem;
+  }
+
+  .important_message_container {
+    padding-left: 18rem;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .important_message_container h3 {
+    padding-left: 3rem;
+  }
+
+  .description_container {
+   
+  }
+  .description_container_item {
+    display: block;
+    justify-content: space-between;
+    gap: 15px;
+    margin-left: 3rem;
+  }
+
+  .books_container {
+    padding-left: 18rem;
+  }
+
+  .books_container_title {
+    padding-left: 3rem;
+  }
+
+  .books_container_cards {
+    padding-left: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* landing page */
+
+  .main_message {
+    
+  }
+
+  .main_container {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+  }
+
+  /* footer */
+
+
+ 
+  .phones_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+  /* turning off flip animation  */
+  .flip-card:hover .flip-card-inner {
+    transform: none;
+  }
+
+  /* turning off parallax animation  */
+
+  .pimg1 {
+    background-attachment: scroll;
+  }
+}
+
+

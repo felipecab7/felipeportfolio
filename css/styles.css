@@ -160,6 +160,12 @@
   height: 370px;
 }
 
+
+
+.thumbpequeno {
+  max-width: 360px !important;
+}
+
 #heroimage2 {
   width: 600px !important;
 }
@@ -641,7 +647,7 @@ b {
 }
 
 .box-scroll {
-  height: 200px;
+  height: 100px;
   overflow: hidden;
   position: relative;
 }

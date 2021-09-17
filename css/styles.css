@@ -118,6 +118,8 @@
   --color-primary-200: #6aeeb5;
   --nice-black: #252525;
 
+  --matterhorn: rgb(7, 135, 145) ;
+
   /* secondary color variables */
 
   --buttons: #5e5e5e;
@@ -274,7 +276,7 @@
 }
 
 .wrap3:hover{
-  background: rgb(0, 129, 138);
+  background: var( --matterhorn);
   transition:all .3s;
 }
 
@@ -296,7 +298,15 @@
 
 
 
+.hightlight-matterhorn {
+  background: var( --matterhorn);
+}
 
+.color-matterhorn{
+  color: var( --matterhorn);
+  font-weight: 600;
+
+}
 
 
 
@@ -957,6 +967,24 @@ b {
 
 .button-main-page {
   color: var(--buttons);
+}
+
+.nicegrid {
+  display: grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+}
+
+.nicegrid .challenge {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+.nicegrid .challenge-description {
+
+  grid-column-start: 4;
+  grid-column-end: 13;
+  
 }
 
 .gradient0 {
@@ -2574,6 +2602,22 @@ form {
     
   }
 
+  
+  .nicegrid .challenge {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    opacity: 0;
+
+  }
+
+  .nicegrid .challenge-description {
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+    
+  }
+
+
   #matterhornlanding {
     position: relative;
     bottom: 0px;
@@ -2796,7 +2840,8 @@ form {
   }
 
   .h1 {
-    font-size: 60px;
+    font-size: 40px;
+    text-align: left;
   }
 
   .social-list {

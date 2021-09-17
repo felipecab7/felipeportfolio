@@ -980,6 +980,21 @@ b {
   background-clip: text;
 }
 
+#oldsitematterhorn {
+  
+}
+
+
+@media screen and (max-width: 980px) {
+
+  .main-content figure {
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+
+}
+
 .button-main-page i {
   width: 30px;
   font-size: 20px;

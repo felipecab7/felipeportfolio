@@ -449,6 +449,10 @@ b {
   color: white;
 }
 
+#mystory {
+  line-height: 30px;
+}
+
 .h0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -909,8 +913,16 @@ b {
   justify-content: flex-end;
 }
 
+#mystoryimage {
+  position: relative;
+
+  width: calc(60%) !important;
+  left: 20%;
+
+}
+
 #landingmainmessage {
-  height: 100vh;
+  height: 50vh;
   align-items: center;
   padding: 0px !important;
 
@@ -2529,6 +2541,10 @@ form {
 }
 
 .case-image {
+}
+
+#signature {
+  padding-top: 30px;
 }
 
 .greyscale {

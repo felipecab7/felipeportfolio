@@ -122,9 +122,9 @@
 
   /* secondary color variables */
 
-  --buttons: #5e5e5e;
+  --buttons: #333333;
 
-  --modernblack: #0d0d0e;
+  --modernblack: #0c0c0c;
 
   --color-secondary-900: #00696a;
   --color-secondary-800: #008c96;
@@ -368,7 +368,7 @@ body {
   font-family: "silkamedium", "silka", sans-serif;
   background: var(--modernblack);
   letter-spacing: -0.5px;
-  color: white !important;
+  color: rgb(20, 20, 20) !important;
   overflow-x:hidden;
  
 
@@ -411,7 +411,7 @@ h1 {
 h2 {
   font-family: "silkamedium";
   font-size: 35px;
-  color: black;
+  color:var(--typography);
   margin: 1.25rem 0;
   line-height: 1.6rem;
 }
@@ -463,6 +463,25 @@ b {
   line-height: 30px;
 }
 
+.blackt {
+  color: black !important;
+}
+
+.whitet {
+  color: rgb(255, 255, 255) !important;
+}
+
+
+.oranget {
+  color: rgb(248, 99, 0) !important;
+}
+
+.bluet {
+  color: rgb(6, 201, 207) !important;
+}
+
+
+
 .h0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -505,7 +524,7 @@ b {
   font-family: "silkasemibold";
   text-align: left;
   letter-spacing: -3px;
-  color: white;
+  color: rgb(48, 48, 48);
 }
 
 .h2 {
@@ -515,15 +534,33 @@ b {
   -webkit-align-self: baseline;
   -ms-flex-item-align: baseline;
   align-self: baseline;
-  color: rgb(27, 27, 27);
+  
   font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
   font-family: "silkasemibold";
   text-align: left;
   letter-spacing: -4px;
-  color: white;
+  color: rgb(48, 48, 48);
 }
+
+.h10 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -0.05em;
+  -webkit-align-self: baseline;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+  
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 600;
+  font-family: "silkasemibold";
+  text-align: left;
+  letter-spacing: -2px;
+  color: rgb(48, 48, 48);
+}
+
 
 .h3 {
   margin-top: 0px;
@@ -537,7 +574,7 @@ b {
   line-height: 1;
   font-weight: 600;
   font-family: "silkasemibold";
-  color: white;
+  color: rgb(48, 48, 48);
 }
 
 .light {
@@ -547,7 +584,7 @@ b {
 .f-22 {
   font-size: 30px !important;
   margin: 0px !important;
-  color: white;
+  color: rgb(48, 48, 48);
 }
 
 .pb-1 {
@@ -776,10 +813,10 @@ b {
 .logo {
   flex: 1;
   font-family: "silkasemibold", sans-serif !important;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -931,6 +968,11 @@ b {
 
 }
 
+#mainmatterhorn {
+  width: calc(120%);
+  margin: 2.5rem 0 0rem -6.25rem;
+}
+
 #landingmainmessage {
   height: 50vh;
   align-items: center;
@@ -982,8 +1024,47 @@ b {
 
 .nicegrid .challenge-description {
 
-  grid-column-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  
+}
+
+.nicegrid .image-challenge {
+
+  grid-column-start: 7;
   grid-column-end: 13;
+
+}
+
+.nicegrid .middletitle {
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.nicegrid .recomend-name {
+  grid-column-start: 2;
+  grid-column-end: 10;
+}
+
+.nicegrid .recomend-picture {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.recomend-picture img {
+  width: 80px;
+  border-radius: 50px;
+  
+}
+
+.image-challenge img {
+  width: 600px;
+}
+
+.nicegrid .numbers {
+
+  grid-column-start: 4;
+  grid-column-end: 10;
   
 }
 

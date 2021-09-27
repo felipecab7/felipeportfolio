@@ -1068,7 +1068,7 @@ b {
 
 .pipebrand {
 
-  color: rgb(255, 187, 0) !important;
+  color: rgb(67, 149, 255) !important;
 }
 
 .nicegrid {
@@ -1580,12 +1580,12 @@ figure img {
 }
 
 .supersickcolor {
-  background: linear-gradient(to top, #008aff, #00ffe7);
+  background: linear-gradient(to top, #ffd900, #ffa600);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  min-width: 200px;
+  
   background-size: 100%;
 }
 
@@ -2780,6 +2780,27 @@ form {
 
     
   }
+
+  #heroimage2 {
+    max-width: 300px !important;
+    max-height: 400px;
+    position: relative;
+    z-index: -1;
+    left: 0px;
+  }
+
+
+  #heroimage3 {
+    max-width: 300px !important;
+    max-height: 600px;
+    position: relative;
+    z-index: -1;
+    left: -10px;
+  }
+
+
+  
+  
 
 
 .nicegrid .roles {

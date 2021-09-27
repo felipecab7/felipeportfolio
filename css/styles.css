@@ -313,7 +313,24 @@
 
 
 #heroimage2 {
-  width: 600px !important;
+  max-width: 950px !important;
+  max-height: 600px;
+  position: relative;
+  z-index: -1;
+  left: -100px;
+}
+
+
+#heroimage3 {
+  max-width: 950px !important;
+  max-height: 800px;
+  position: relative;
+  z-index: -1;
+
+}
+
+#heroimage3 img {
+  height: 300px !important;
 }
 
 .margin10 {
@@ -1050,7 +1067,8 @@ b {
 }
 
 .pipebrand {
-  background-color: rgb(255, 208, 0);
+
+  color: rgb(255, 187, 0) !important;
 }
 
 .nicegrid {
@@ -1077,7 +1095,7 @@ b {
 }
 
 .nicegrid .recommendationbox {
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-column-end: 13;
 
 
